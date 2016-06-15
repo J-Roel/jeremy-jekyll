@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Torque3D Demos"
+image:	enchantment.png
+date:   2008-04-15 12:04:53 -0700
+categories: portfolio
+---
+
+<p>A long time user of Torque Game Engine(non-shader), I really wanted to help on the code base when they updated to Torque3D. As such, I tried to get the creators attention. I learned a lot; like building a video game is insanely difficult. But, I found out that 3D modelling and graphic design can be very gratifying.</p> <!--more--> 
+<p>
+
+<p><a href="http://garagegames.com">More on Torque3D</a></p>
+
+<hr/>
+<h4>Demo 1: The Enchantment</h4>
+<p>I have always wanted to make a 3D side scroller. I did all the art work except the guy running around and his sword.</p>
+<iframe class="center-block" width="420" height="315" src="https://www.youtube.com/embed/q7vjzWv2MDA" frameborder="0" allowfullscreen></iframe>
+
+<hr/>
+<h4>Demo 2: Cave Demo</h4>
+<p>Probably one of my favorites, just because if you could play the demo, you can hear the wind echoing behind you and it's sort of serene. I did all the artwork and sounds. The reflective water in the dark looks really nice. I turned the world upside down to create these mossy caves. Pushed the terrain system to a whole new level.</p>
+<iframe class="center-block" width="420" height="315" src="https://www.youtube.com/embed/mhCkTqKayKM" frameborder="0" allowfullscreen></iframe>
+
+<hr/>
+<h4>Demo 3: Side Scroller Shooter</h4>
+<p>All artwork except the character.</p>
+<iframe class="center-block" width="420" height="315" src="https://www.youtube.com/embed/vp0lQGumg5k" frameborder="0" allowfullscreen></iframe>
+
+<hr/>
+<h4>Demo 4: Christmas Demo</h4>
+<p>Procedural Shaders. Again I did all the art work except the guy rotating on the ice.</p>
+<iframe class="center-block" width="420" height="315" src="https://www.youtube.com/embed/uJW58GQcjjQ" frameborder="0" allowfullscreen></iframe>

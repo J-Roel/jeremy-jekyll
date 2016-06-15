@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Gimp Imp"
+image:	gimp-imp.png
+date:   2012-04-15 12:04:53 -0700
+categories: portfolio
+tags: [game, games, gimp, imp, video]
+---
+
+<p>A 2D game with parallax scrolling and beautiful graphics. It is a floppy bird clone that is way more fun to play than the original.</p> <!--more--> The imp is also off my original top-down hack and slash RPG made with the original torque game engine and constructor. I actually used him in a few games. I made this with Game Maker. Orginally with Unity3D prior to their 2D side of the engine, but the exporting, and modularity of the Game Maker was much faster and easier to use than Unity.
+
+Here's a video:
+<iframe class="center-block" width="420" height="315" src="https://www.youtube.com/embed/rSCfKm6Zw_w" frameborder="0" allowfullscreen></iframe>
+
+Here's a link to download the game:
+
+(comming soon)

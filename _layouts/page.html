@@ -2,28 +2,19 @@
 layout: default
 ---
 <article class="row">
-  <section id="hero-page" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hero-page">
+  <section id="hero-page" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   		<div class="row container">
 	  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+	        	
 	        	{% if page.image %}
-		          <img class="hero-page-logo" src="/assets/images/{{ page.image }}"/>
+		          <img class="center-block hero-page-logo" src="/assets/images/{{ page.image }}"/>
 		        {% else %}
-		          <img class="hero-page-logo" src="/assets/images/default.png"/>
+		          <img class="center-block hero-page-logo" src="/assets/images/default.png"/>
 		        {% endif %}
 			    
 	  		</div>
 	  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-  				<h2>{{ page.title }}</h2>
-  				<p class="post-meta">
-  					{% if page.date %}
-	  					<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-	  					{% if page.author %} 
-	  						<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-	  							<span class="author" itemprop="name">{{ page.author }}</span>
-	  						</span>
-	  					{% endif %}
-  					{% endif %}
-  				</p>
+  				<h1 class="hero-shadow">{{ page.title }}</h1>
   			</div>
   		</div>
 	</section>

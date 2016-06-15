@@ -35,18 +35,46 @@ $(document).ready(function(){
 
 	/* Scroll Effect - can elements at different positions */
 	$(window).on("scroll", function() {
-    //if (window.matchMedia("(min-width: 400px)").matches) {
+        //Fixed Nav bar 
         if($(window).scrollTop() > 35) {
-            $('header').css('background-color', '#fff');
+            $('header').css('background-color', '#2F3441');
         } else {
             $('header').css('background-color', 'transparent');
         }    
-    //} else {
-            //do nothing
-    //}
+      //For each section or item you want faded in
+       $('.fadeIn').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
 
 	});
 
+
+
+
+
+//   $("body").mousemove(function(event) {
+//   var eye = $(".eye");
+//   var x = (eye.offset().left) + (eye.width() / 2);
+//   var y = (eye.offset().top) + (eye.height() / 2);
+//   var rad = Math.atan2(event.pageX - x, event.pageY - y);
+//   var rot = (rad * (180 / Math.PI) * -1) + 180;
+//   eye.css({
+//     '-webkit-transform': 'rotate(' + rot + 'deg)',
+//     '-moz-transform': 'rotate(' + rot + 'deg)',
+//     '-ms-transform': 'rotate(' + rot + 'deg)',
+//     'transform': 'rotate(' + rot + 'deg)'
+//   });
+// });
 
 
 
