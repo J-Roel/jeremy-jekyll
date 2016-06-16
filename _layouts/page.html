@@ -1,31 +1,46 @@
 ---
 layout: default
 ---
-<article class="row">
-  <section id="hero-page" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-  		<div class="row container">
-	  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-	        	
-	        	{% if page.image %}
-		          <img class="center-block hero-page-logo" src="/assets/images/{{ page.image }}"/>
-		        {% else %}
-		          <img class="center-block hero-page-logo" src="/assets/images/default.png"/>
-		        {% endif %}
-			    
-	  		</div>
-	  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-  				<h1 class="hero-shadow">{{ page.title }}</h1>
-  			</div>
-  		</div>
-	</section>
-    
-	<section class="col-xs-12 col-sm-12 col-md-10 col-lg-offset-1 col-lg-10 col-lg-offset-1 marg">
-	  	<div class="post-content">
-	    	{{ content }}
-	  	</div>
 
-  	</section>
+<section class="row">
+	<div id="hero-page" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<h1 class="text-center hero-shadow">{{ page.title }}</h1>
+	</div>
+</section>
 
+<article class="row marg">
+	
+	
+	<div id="category" class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+		
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				{% if page.image %}
+				    <img class="center-block" src="/assets/images/{{ page.image }}"/>
+				{% else %}
+				    <img class="center-block hero-page-logo" src="/assets/images/default.png"/>
+				{% endif %}
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+				<h4>{{ page.title }}</h4>
+				<p>{{ page.date | date: "%b %-d, %Y" }}</p>
+				<hr/>
+				{% if page.description %}
+            		<p>{{ page.description }}<p>
+          		{% else %}
+            		<p>{{ page.excerpt }}</p>
+				{% endif %}
+			</div>
+		</div>
+
+	</div>
+
+	
+   	<div id="post-content">
+   		{{ content }}
+   	</div>
+	
 </article>
 
 

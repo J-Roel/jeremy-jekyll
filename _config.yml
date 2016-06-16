@@ -21,6 +21,6 @@ github_username:  J-Roel
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: none
+permalink: pretty
 
 excerpt_separator: "<!--more-->"
