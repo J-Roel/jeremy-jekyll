@@ -12,8 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   We are programmers, designers, hackers, makers, tinkerers, 
   writers and artists and we want to have an impact on the community 
   around us.
-baseurl: "jeremy-jekyll" # the subpath of your site, e.g. /blog
-url: "http://jeremyroelfs.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jeremyroelfs.github.io" # the base hostname & protocol for your site
 
 twitter_username: The_J_Roel
 github_username:  J-Roel
