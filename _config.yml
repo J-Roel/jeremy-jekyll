@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
   writers and artists and we want to have an impact on the community 
   around us.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "jr-web.ninja" # the base hostname & protocol for your site
+url: "http://jr-web.ninja" # the base hostname & protocol for your site
 
 twitter_username: The_J_Roel
 github_username:  J-Roel
