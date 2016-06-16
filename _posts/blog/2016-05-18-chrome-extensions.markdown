@@ -11,7 +11,7 @@ description: Chrome Extensions and drop downs really are easy to setup. Here I p
 <hr/>
 <iframe src="https://docs.google.com/presentation/d/1_K_JzmvUNkvqekLV2GfykdtO25eprtGE69OXPcctf_8/embed?start=true&amp;loop=true&amp;delayms=5000" width="480" height="299" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-<a href="https://github.com/J-Roel/chrome-app-ext-boilerplate-gschool">GitHub: https://github.com/J-Roel/chrome-app-ext-boilerplate-gschool</a>
+<a href="https://github.com/jeremyroelfs/chrome-app-ext-boilerplate-gschool">GitHub: https://github.com/J-Roel/chrome-app-ext-boilerplate-gschool</a>
 Here are some good tutorials and references to look through:
 
 <a href="https://developer.chrome.com/apps/app_codelab_basics">https://developer.chrome.com/apps/app_codelab_basics</a>
