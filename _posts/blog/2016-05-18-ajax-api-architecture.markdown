@@ -7,16 +7,12 @@ categories: blog
 description: This tutorial will guide you through the very basics of building an html page and displaying data retrieved from an API. We will use html, javascript, jQuery, AJAX and the OMDb API endpoint.
 ---
 
-<h4>OMDB API with AJAX</h4>
-
-
-<hr/>
-
 <div class="row">
 	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 	</div>
 	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 		<div class="row">
+		<hr/>
 			<p><strong>Prerequisites:</strong></p>
 			<ul>
 				<li>Understanding of HTML and CSS</li>
@@ -24,11 +20,13 @@ description: This tutorial will guide you through the very basics of building an
 			</ul>
 			<p><strong>Goals:</strong></p>
 			<ul>
-				<li><a href="#1">1 - Understand what AJAX is and how it relates to JQuery and Javascript</a></li>
-				<li><a href="#2">2 - Setup our html and javascript</a></li>
-				<li><a href="#3">3 - Build our URI and understand how this is part of our request object</a></li>
-				<li><a href="#4">4 - Coding our AJAX call</a></li>
-				<li><a href="#5">5 - Parse data and render to our html</a></li>
+				<li><a href="#1">Understand what AJAX is and how it relates to JQuery and Javascript</a></li>
+				<li><a href="#2">Setup our html and javascript</a></li>
+				<li><a href="#3">Build our URI and understand how this is part of our request object</a></li>
+				<li><a href="#4">Coding our AJAX call</a></li>
+				<li><a href="#5">Render data to our html</a></li>
+				<li><a href="#6">End Results</a></li>
+				<li><a href="#7">Stretch Goals</a></li>
 			</ul>
 		</div>
 	</div>
@@ -36,17 +34,19 @@ description: This tutorial will guide you through the very basics of building an
 	</div>
 </div>
 
-<hr/>
-<div id="1" class="row">
-	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-	</div>
-	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-		<div class="row">
+<div id="1">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+			<hr/>
 			<h4>Section 1 - Understanding AJAX</h4>
-			<p>To understand what Asynchronous JavaScript and XML is; we first need to note that it is not the cleaning product.</p>
+			<hr/>
+			<p>To understand what AJAX is, we first need to note that it is not the cleaning product.</p>
 			<p>Yeah, I got crickets on that one...</p>
-			<p>AJAX is in fact a helpful tool to build a XMLHttpRequest Object.</p>
-			<p>Let's outline how it works:</p>
+			<p>AJAX stands for Asynchronous JavaScript and XML and is a helpful tool to build a XMLHttpRequest Object.</p>
+			<p><strong>Let's outline how it works:</strong></p>
+			
 			<ul>
 				<li><p>Your program is running on a user's computer.</p></li>
 				<li><p>Your program tells the browser what data it needs in a package called an XHLHttpRequest Object.</p></li>
@@ -56,283 +56,357 @@ description: This tutorial will guide you through the very basics of building an
 				<li><p>Once returned, the data can now be parsed.</p></li>
 				<li><p>We then tell the browser how to utilize and render the data.</p></li>
 			</ul>
-			<p>In addition:</p>
-			<p>AJAX allows data to be updated without reloading the entire page. This is called data binding. <a href="http://crunchify.com/how-to-refresh-div-content-without-reloading-page-using-jquery-and-ajax/">But you can do more research for that on your own.</a> We will stick to the basics for this tutorial.</p>
-			<hr/>
-			<p>So simply stated: AJAX gets information from the net so you can use it on your site.</p>
+			
 			<p><strong>Why do we care?</strong></p>
-			<p>Well, imagine if you had 5000 users. Each user has an address, zip, first and last name, nickname, password, email, etc... That would be a lot of data to store on every one of your user's computers. Also, I would appreciate it if you didn't give 5000 people my email address.<p>
+			<p>Well, imagine if you had 5000 users. Each user has an address, zip, first and last name, nickname, password, email, etc... That would be a lot of data to store on every one of your user's computers. Also, I would appreciate it if you didn't give 5000 people my email address.</p>
 			<p>So Application Program Interfaces, or APIs, provide security, they keep your data manageable, and your program's footprint small. AJAX talks to these APIs in a convenient and clean way.</p>
 		</div>
 	</div>
-	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+			<p><strong>How does this work with Javascript?</strong></p>
+			<p>Glad you asked. AJAX is built in to jQuery. So you don't need anything special for AJAX to work with Javascript. Simply include jQuery and you are good to go.</p>
+			<p>AJAX is a concept. Basically it is a script forged on the paradigm of Asynchronous functionality.</p>
+			<p>A computer program is very linear in nature. Say I'm running a program on Computer A and request data from Computer B. By the time Computer B sent the data back... The program running on computer A would be done running. That wouldn't do us any good.</p>
+			<p>AJAX allows a sort of timing protocol to ensure that we can obtain the data and control the flow of our computer program.</p>
+			<p>And yes, you could preform all of this functionality in raw javascript. But, AJAX gives you a nice clean Promise style method to work with. Consider it a layer of functions setting on top of Javascript.</p>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+			<p><strong>Good things to note:</strong></p>	
+			<ul>
+				<li><p>JQuery returns and passes objects very conveniently for us.</p></li>
+				<li><p>That object created by our AJAX call includes the request type, state, headers and many other needed bits of information. *Note: <a href="https://http.cat/">Kittens are the best way to memorize your states.</a></p></li>
+				<li><p>AJAX is great! We don't have to deal with all those little things.</p></li>
+				<li><p>We then control the flow of our code based on what data is returned.</p>
+				<code><pre>
+				success: function(data) {
+					//Alright! We got back our data, lets do something with it.
+				},
+				error: function(err){
+					//Ah; sorry, there was nothing returned.
+				}</pre></code>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div id="2">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+			<hr/>
+				<h4>Section 2 - HTML and Javascript</h4>
+			<hr />
+			<p>If you are new to html and javascript, it is always good practice to start from a clean slate. Make a directory structure similar to this: (index.html will be in the root ajax-tut)</p>
+			<ul>
+				<li class="dir"><p>ajax-tut</p></li>
+				<ul>
+					<li class="dir"><p>css</p></li>
+					<ul>
+						<li class="dir"><p>styles.css</p></li>
+					</ul>
+					<li class="dir"><p>js</p></li>
+					<ul>
+						<li class="dir"><p>main.js</p></li>
+					</ul>
+					<li class="dir"><p>index.html</p></li>
+				</ul>
+			</ul>
+
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+			<hr/>
+			<p><strong>Setup a server.</strong></p>
+			<p>Let's take a second and setup a server before we start typing code.</p>
+			<p>Since we will be making API calls, we need to establish that we are not merely working off our computer, but that we are serving up our website/app. It gets a little difficult to explain, but for almost all of your projects, you will want to be running a server. This will prevent a lot of headaches and is a good habit to get into. So first we need to be running Node.js, then install our http-server, and finally run it.</p>
+			<p><strong>FOR MAC AND WINDOWS:</strong></p>
+			<ul>
+				<li><p>Install Node.js</p>
+					<ul>
+						<li><p><a href="https://nodejs.org/en/">Link to Node.js</a></p></li>
+						<li><p>Mac will show the mac version, windows will show the windows version.</p></li>
+					</ul>
+				</li>
+				<li><p>Once Node is installed you will have to open terminal (or command prompt).</p></li>
+				<li><p>Now you have access to Node Package Manager (NPM), simply type:</p>
+					<code><pre>npm install http-server -g</pre></code>
+				<p>*Note: If you type --help, you will see -g will install the desired software globally. If you are on a mac, you may need to install this with sudo for permissions.</p></li>
+				<li><p>Next, we need to make sure we are in the directory we wish to serve up. So cd into ajax-tut.</p></li>
+				<li><p> Now at the command line create a server:</p>
+				<code><pre>http-server -c-1</pre></code>
+				<p>*Note: the -c will make sure your cache is cleared every time you refresh. This is great because you know you are getting up-to-date versions of your code and not something stored in cache.</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+		<hr/>
+			<p><strong>Now on to the code:</strong></p>
+			
+			<ul>
+				<li><p>First, let's make a HTML skeleton. In index.html</p>
+<code><pre>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+	&lt;title&gt;Ajax Example&lt;/title&gt;
+	&lt;link rel="stylesheet" type="text/css" href="/css/styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;!--HTML CONTENT GOES HERE--&gt;
+
+	&lt;h1&gt;Hello World!&lt;/h1&gt;
+
+	&lt;script src="https://code.jquery.com/jquery-3.0.0.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="/js/main.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></code>
+				</li>
+				<li><p>Next, let's add some styles to our /css/styles.css:</p>
+					<code><pre>h1{
+	color: red;
+}</pre></code>
+				</li>
+				<li><p>Finally, add some javascript in our js/main.js:</p>
+					<code><pre>$(document).ready(function(){
+
+	alert("Ready!");
+
+});//End of document.ready</pre></code>
+				</li>
+				<li><p>Lastly we need to open a browser window and in the address bar type:</p>
+				<code><pre>localhost:8080</pre></code>
+				<p>*Note - The http-server defaults to 8080. But you can change the port if you wish.</p>
+				</li>
+				<li><p>You should have a popup that says READY! and a red Hello World!</p>
+				<p>If you don't see those two, please review section 2. Make sure you're file structure is setup correctly and that jQuery is installed and running. You will see the READY! if jQuery is running correctly.</p></li>
+
+			</ul>
+
+
+			<p><strong>Alright, now on to the fun stuff!</strong></p>
+
+
+		</div>
 	</div>
 </div>
 
 
 
 
-
-<strong>How does this work with Javascript?</strong>
-Glad you asked. AJAX is built in to jQuery. So you don't need anything special for AJAX to work with Javascript. Simply include jQuery and you are good to go.
-What AJAX is in concept. Basically it is a script forged on the paradigm of Asynchronous functionality.
-A computer program is very linear in nature. Say I'm running a program on Computer A and request data from Computer B. By the time Computer B sent the data back... The program running on computer A would be done running. That wouldn't do us any good.
-AJAX allows a sort of timing protocol to ensure that we can obtain the data and control the flow of our computer program.
-
-And yes, you could preform all of this functionality in raw javascript. But, AJAX gives you a nice clean Promise style method to work with. Consider it a layer of functions setting on top of Javascript.
-
-Good things to note:
-- JQuery returns and passes objects very conveniently for us.
-- That object created by our AJAX call includes the request type, state, headers and many other needed bits of information. *Note: <a href="https://http.cat/">Kittens are the best way to memorize your states.</a>
-- AJAX is great! We don't have to deal with all those little things.
-- Also with AJAX syntax. It either works, or it doesn't.
-- We then control the flow of our code based on what data is returned.
-<div style="border: 1px solid red; margin: 2em; padding: 1em; background: #bbb;"><code style="font-size: 14px; color: red;">success: function(data) {
-//Alright! We got back our data, lets do something with it.
-},
-error: function(err){
-//Ah; sorry, there was nothing returned... here let me give you some information as to why.
-}
-</code></div>
-Let's move on to section 2 and setup our code.
-
-<hr />
-
-<strong>Section 2 - HTML and Javascript</strong>
-
-<hr />
-
-If you are a beginner, it is always good practice to start from a clean slate. This will engrave the basics into your brain!
-
-If you are on Windows, you can follow the picture below and do basically the same in command prompt.
-- Use echo &gt; index.html to make your html, css and js files. mkdir is the same command on windows and mac.
-
-If you are on a mac, you had better be using the command line or terminal:
-<img class="wp-image-152 size-full aligncenter" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-16-at-4.49.26-PM.png" alt="Screen Shot 2016-05-16 at 4.49.26 PM" width="343" height="210" />
-
-You should end up with a structure like so (index.html being on the root, styles in css, main in js):
-
-<img class="size-full wp-image-153 aligncenter" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-16-at-4.57.39-PM.png" alt="Screen Shot 2016-05-16 at 4.57.39 PM" width="124" height="128" />
-
-&nbsp;
-
-<strong>The next item on the list is to setup a server.</strong>
-Since we will be making API calls, we need to establish that we are not merely working off our computer, but that we are serving up our website/app. It gets a little difficult to explain, but for almost all of your projects, you will want to be running a server. This will prevent a lot of headaches and is a good habit to get into. So first we need to be running Node.js, then install our http-server, and finally run it.
-
-FOR MAC AND WINDOWS:
-1 - Install Node.js - <a href="https://nodejs.org/en/">Node.js</a> Mac will show the mac version, windows will show the windows version.
-2 - Once Node is installed you will have to open terminal (or command prompt).
-3 - Now you have access to Node Package Manager (NPM), simply type:
-<div style="border: 1px solid red; margin: 2em; padding: 1em; background: #bbb;"><code style="font-size: 14px; color: red;">npm install http-server -g
-</code></div>
-*Note: If you type --help, you will see -g will install the desired software globally.
-
-Next, we need to make sure we are in the directory we wish to serve up. That being ajax-tut. Now at the command line create a server:
-<div style="border: 1px solid red; margin: 2em; padding: 1em; background: #bbb;"><code style="font-size: 14px; color: red;">http-server -c-1
-</code></div>
-*Note: the -c will make sure your cache is cleared every time you refresh. This is great because you know you are getting up-to-date versions of your code and not something stored in cache.
-
-- Now open a browser.
-- In your address bar type:
-<div style="border: 1px solid red; margin: 2em; padding: 1em; background: #bbb;"><code style="font-size: 14px; color: red;">localhost:8080
-</code></div>
-You should now see... nothing... but a blank page.
-
-<strong>Now on to the code:</strong>
-First, let's make a HTML skeleton:
-<img class="size-full wp-image-156 aligncenter" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-16-at-6.05.58-PM.png" alt="Screen Shot 2016-05-16 at 6.05.58 PM" width="681" height="300" />
-
-Next, let's add some styles to our css/styles.css:
-<img class="size-full wp-image-157 aligncenter" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-16-at-6.08.48-PM.png" alt="Screen Shot 2016-05-16 at 6.08.48 PM" width="158" height="69" />
-
-Finally, add some javascript in our js/main.js:
-<img class="size-full wp-image-158 aligncenter" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-16-at-6.12.07-PM.png" alt="Screen Shot 2016-05-16 at 6.12.07 PM" width="308" height="171" />
-
-Since we are running a server. All you need to do is refresh your browser window and our changes will appear.
-
-Whoops! Make sure you add the html script to load jQuery. You can CDN the minified off the <a href="https://code.jquery.com/">jQuery site</a> or download it.
-
-Alright, refresh your page and see if you get the alarm popup, a red Hello World!, and if you right click on your browser window and click inspect. Then go to the console tab, you should read: Working!
-
-<hr />
-
-<strong>Section 3 - Building the AJAX call</strong>
-
-<hr />
-
-We will be working with the <a href="http://www.omdbapi.com/">OMDb API</a>. I highly recommend <a href="http://www.omdbapi.com/">checking out there site</a> and reviewing their API usage and parameters.
-*Note: If you have Postman installed. This would be a good chance to test the OMDb API. You can then see how the structure of the JSON is returned via different parameters and confirm you have a working URI setup.
-
-<strong>URI</strong>
-
-The OMDb API usage says that we should send all our API requests to: http://www.omdbapi.com/?
-That is called the URI or Uniform Resource Identifier.
-
-I said in the beginning we would be using a XMLHttpRequest Object. And that is exactly what we are building.
-We have 2 basic parts:
-- Request - which contains the header info, state, etc... we won't worry about those now
-- URI - which contains:
-- - protocol type -&gt; http
-- - location(url) -&gt; www.omdbapi.com
-- - parameters -&gt; Everything after the "?" question mark.
-
-These parameters tell the API what data we want.
-We will be using this: "?s=frozen&amp;plot=short&amp;r=json"
-- the s is for search (and is required)
-- frozen is the the keyword or title we will be searching for
-- the &amp; tells the API we have another parameter
-- plot is for... plot. It can be short or long. we want the short version.
-- and finally r is for return, which we want to return a JSON object.
-
-Awesome! We now have our URI that we can send to our API: "http://www.omdbapi.com/?s=frozen&amp;y=&amp;plot=short&amp;r=json
-
-<strong>So now what?</strong>
-We know what the client is going to send to the API, right?
-What does that look like once it leaves our computer?
-Here is a quick break down:
-<img class="aligncenter wp-image-171 size-full" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-16-at-10.56.48-PM.png" alt="Screen Shot 2016-05-16 at 10.56.48 PM" width="530" height="487" />
-
-Great! You now have the basic concept of what makes the internet tick. We also understand the purpose behind APIs, and how to communicate with them. Let's build our AJAX function and see some data.
-
-<hr />
-
-<strong>Section 4 - Coding the AJAX call</strong>
-
-<hr />
-
-<strong>First, we plan what we are going to need:</strong>
-HTML
-1 - title
-2 - search/input box
-3 - search button
-4 - container to hold our searches
-
-JS
-1 - Get input from input box
-2 - call to API to get data
-3 - Append results to our container
-
-<strong>HTML</strong>
-This will be inside our body tag:
-<img class="size-full wp-image-185 aligncenter" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-11.49.41-AM.png" alt="Screen Shot 2016-05-17 at 11.49.41 AM" width="519" height="242" />
-
-<strong>Javascript</strong>
-1 - get input from input box:
-*Note we will do this all with jQuery inside our $(document).ready(function(){
-<img class="size-full wp-image-187 aligncenter" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-11.51.26-AM.png" alt="Screen Shot 2016-05-17 at 11.51.26 AM" width="815" height="263" /> - That setup our click event handler.
-- Grabbed the user input from our #movie-title input box.
-- Stored the user input in a variable.
-- Then added the user input variable to our URI string that we will pass to the API.
-- It also placed our container node into a variable for later use.
-
-2 - call to API to get data:
-This is the meat and potatoes of what you are learning today and is really straight forward.
-We use the $.ajax method. This takes in an object with some pre-defined key/value pairs.
-- Method, which will be the type call we are making. In this case it is a "GET"
-- URI, will be the URL and parameters we are using to define our request
-
-We also have two callback functions in that AJAX object.
-- success: which will contain the data received from our call if we are successful
-- error: which will contain our error message if there is any problems.
-
-Your AJAX call will look like this:
-<img class="size-full wp-image-188 aligncenter" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-11.53.55-AM.png" alt="Screen Shot 2016-05-17 at 11.53.55 AM" width="355" height="232" />
-
-Your main.js should now look like this:
-
-<img class="aligncenter size-full wp-image-189" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-11.57.14-AM.png" alt="Screen Shot 2016-05-17 at 11.57.14 AM" width="846" height="699" />
-
-
-<hr />
-
-<strong>Section 5 - Parse data and add to our HTML</strong>
-
-<hr />
-<strong>Adding to container</strong>
-Now we will view our JSON data that is returned from the API.
-
-If you ran through the API calls with Postman earlier as recommended, you should have an idea of how to approach organizing your returned JSON object.
-
-AJAX helps us out by returning and parsing the JSON object to a javascript object.
-If we were working with raw javascript, we would normally have to do that ourselves. It is just another way jQuery's AJAX makes this process faster.
-
-So if your code has console.log("Done: ", results); has I have shown, you can pull up your browser window console up and view your object.
-
-<img class="aligncenter size-full wp-image-191" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-11.59.11-AM.png" alt="Screen Shot 2016-05-17 at 11.59.11 AM" width="752" height="378" />
-The only items we are concerned about here are the Search array and it's nested objects.
-
-So access this array, I will use dot notation on the object:
-
-<div style="border: 1px solid red; margin: 2em; padding: 1em; background: #bbb;"><code style="font-size: 14px; color: red;">results.Search
-</code></div>
-
-That will give me access to the Array[10] we see above.
-
-
-<strong>Looping and appending</strong>
-Now that we know how to grab our data from the returned request.
-
-Let's take the next step and render our information to the HTML webpage with jQuery.
-
-1 - We have an array of 10 right? Let's loop through that array and see what we have.
-
-Our code should look like this:
-<img src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-12.39.57-PM.png" alt="Screen Shot 2016-05-17 at 12.39.57 PM" width="501" height="234" class="aligncenter size-full wp-image-194" />
-
-And if we run the program and search for frozen. We should see our 10 movies.
-Wait... I see an undefined at number 10... 
-Remember, arrays start at 0. So 0 to 9 = a count of 10. To fix this, put a -1 behind your movies.length in the For loop.
-
-2 - Access individual movies:
-Cool. Now we can see how to access the movies.
-We have broken down our JSON object to the point where we can grab each individual movie's information.
-
-To do this we simply call the Key of the value we want with dot notation.
-So to get our first movie title we would use this:
-<div style="border: 1px solid red; margin: 2em; padding: 1em; background: #bbb;"><code style="font-size: 14px; color: red;">movies[0].title
-</code></div>
-
-Pretty simple right?
-
-<strong>We can grab our movies, but we need to render them to our webpage.</strong>
-We can do this using jQuery's built in method append.
-And what do we want to append to? Our container variable we grabbed earlier.
-
-We are also setting up a list in our HTML so we can use the li and img tag like this:
-<img src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-12.50.56-PM.png" alt="Screen Shot 2016-05-17 at 12.50.56 PM" width="729" height="176" class="aligncenter size-full wp-image-195" />
-
-
-And I do apologize... in your HTML, you need to change your div id="container" /div to ul id="container" /ul
-
-
-Great! Now you can run your code and it SHOULD populate your html page with our 10 movies.
-
-
-Our Final Files should look like this:
-
-index.html
-<img src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-10.30.18-PM.png" alt="Screen Shot 2016-05-17 at 10.30.18 PM" width="1025" height="567" class="aligncenter size-full wp-image-201" />
-
-main.js
-<img src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-10.32.15-PM.png" alt="Screen Shot 2016-05-17 at 10.32.15 PM" width="846" height="845" class="aligncenter size-full wp-image-202" />
-
-<hr />
-
-<strong>Stretch GOALS!</strong>
-
-<hr />
-
-1 - Use CSS to make everything look slick and nice.
-2 - Use the OMDb API to grab more information from the API and render it on your HTML website
-
-
-
-
-
-
+<div id="3">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+			<hr/>
+			<h4>Section 3 - Building the AJAX call</h4>
+			<hr/>
+			<p>We will be working with the <a href="http://www.omdbapi.com/">OMDb API</a>. I highly recommend <a href="http://www.omdbapi.com/">checking out there site</a> and reviewing their API usage and parameters.</p>
+			<hr/>
+			<p><strong>URI</strong></p>
+			<p>The OMDb API usage says that we should send all our API requests to:</p>
+			<code><pre>http://www.omdbapi.com/?</pre></code>
+			<p>That is called the URI or Uniform Resource Identifier.</p>
+			<hr/>
+			<p>I said in the beginning we would be using a XMLHttpRequest Object. And that is exactly what we are building here.</p>
+			<p>We have two parts:</p>
+			<ul>
+				<li><p>Request - which contains the header info, state, etc... we won't worry about those now</p></li>
+				<li><p>URI - which contains:</p></li>
+				<ul>
+					<li><p>Protocol type: http, ftp, etc.</p></li>
+					<li><p>URL (location): In this tut it is: www.omdbapi.com</p></li>
+					<li><p>Parameters</p></li>
+				</ul>
+			</ul>
+
+			<p>Now let us look at the third part part of our URI, the paramters!</p>
+			<hr/>
+
+
+			<p>These parameters tell the API what data we want.</p>
+			<p>We will be using these setting for our parameter:</p>
+			<code><pre>"?s=frozen&amp;plot=short&amp;r=json"</pre></code>
+			<ul>
+				<li><p>the s is for search</p></li>
+				<li><p>Frozen is the the keyword or title we will be searching for.</p></li>
+				<li><p>the &amp; tells the API we have another parameter.</p></li>
+				<li><p>plot is for... plot. It can be short or long. we want the short version.</p></li>
+				<li><p>and finally r is for return, which we want to return a JSON object</p></li>
+			</ul>
+			<p>Awesome! We now have our URI that we can send to our API. Want to check it? Copy and paste this code below in a new browser tab. You will recieve all the JSON information from the OMDb API endpoint.</p>
+			<code><pre>http://www.omdbapi.com/?s=frozen&amp;y=&amp;plot=short&amp;r=json</pre></code>
+
+			<hr/>
+			<p><strong>So now what?</strong></p>
+			<p>We know what the client is going to send to the API, right?
+			What does that look like once it leaves our computer?</p>
+			<p>Here is a quick break down:</p>
+
+			<img class="aligncenter wp-image-171 size-full" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-16-at-10.56.48-PM.png" alt="Screen Shot 2016-05-16 at 10.56.48 PM" width="530" height="487" />
+
+			<p>Great! You now have the basic concept of what makes the internet tick. We also understand the purpose behind APIs, and how to communicate with them. Let's build our AJAX function and see some data.</p>
+		</div>
+	</div>
+</div>
+
+
+<div id="4">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+			<hr />
+			<h4>Section 4 - Coding the AJAX call</h4>
+			<hr />
+			
+			<p><strong>HTML</strong></p>
+			<p>Remove the Hello World and put the below code inside the body tag:</p>
+			<code><pre>
+				&lt;h1&gt;Ajax Movie Search&lt;/h1&gt;
+				&lt;input id="movie-title"/&gt;
+				&lt;button id="do-search"&gt;Search&lt;/button&gt;
+				&lt;div id="container"&gt;&lt;/div&gt;
+			</pre></code>	
+			<p><strong>Javascript</strong></p>
+			<ul>
+				<li><p>Get our information from our html. Then setup our basic ajax call. Put this Inside our $(document).ready(function(){</p>
+<code><pre>$("#do-search").on('click',function(){
+	//Get data from input box
+	var movieTitle = $('#movie-title').val();
+
+	//Build our URI with the movie title
+	var sURL = "http://www.omdbapi.com/?s=" + movieTitle + "&plot=short&r=json";
+
+	//Grab our container and assign it to variable for later use
+	var container = $('#container');
+
+	$.ajax({
+		method: 'GET',
+		url: sURL,
+		success: function(results){
+			console.log("Done: ", results);
+		},
+		error: function(error){
+			console.error('@ERROR', error);
+		}
+	});
+
+});</pre></code>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div id="5">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+			<hr/>
+			<h4>Section 5 - Adding the data to our HTML</h4>
+			<hr/>
+			
+			<p>Now we will view our JSON data that is returned from the API.</p>
+			<ul>
+				<li><p>We have told the API that we would like to have the data returned in a JSON format, so we do not need to parse the data. In most cases you would have to parse the data yourself using provided functions, but I'm trying to keep this very simple as parsing can give unique errors that can be tricky to diagnose.</p></li>
+				<li><p>If you go to your browser (hopefully you are using chrome or firefox ;), you can right click any where on the screen. Then select "inspect" from the menu.</p></li>
+				<li><p>Now click on the "console" tab. Here you can view the output from our console.log functions in our javascript.</p></li>
+				<li><p><strong>Run the program!</strong></p></li>
+				<li>
+					<p>If all is well and if you typed "Frozen", you should recieve this:</p>
+					<img class="aligncenter size-full wp-image-191" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-11.59.11-AM.png" alt="Screen Shot 2016-05-17 at 11.59.11 AM" width="752" height="378" />
+					<p>Click the little arrow beside Object to view its contents.</p>
+				</li>
+				<li><p>Access Array and loop through it.</p>
+					<ul>
+						<li><p>Use dot notation on the object.</p></li>
+						<li><p> We will then assign our object to a variable called "movies."</p></li>
+						<li><p>Next we need to loop through the array of movies</p></li>
+						<li><p>On your success function of the ajax call, remove console.log("Done: ", results); and add this:</p>
+<code><pre>//store our search results in a variable called movies
+var movies = results.Search;
+
+//Loop through the total number of movies found
+for(var i = 0; i <= movies.length-1; i++){
+	console.log("Movies: ", i, " : ", movies[i]);
+}</pre></code>
+						</li>
+
+					</ul>
+				</li>
+			</ul>
+			<p>Remember, arrays start at 0. So 0 to 9 = a count of 10. To fix this, put a -1 behind your movies.length in the For loop.</p>
+			<hr/>
+
+			<p><strong>2 - Access individual movies:</strong></p>
+			<p>We have broken down our JSON object to the point where we can grab each individual movie's information.</p>
+			<p>Now we can access each movie's key/value pair like this:</p>
+			<code><pre>movies[i].title</pre></code>
+			<p>To test, change the console.log in the for loop to movies[i].title</p>
+			<hr/>
+			<p><strong>Pretty simple right?</strong></p>
+			<p>Now we will use jQuery's append method to add the movies to our html node that we stored in a variale earlier called "container"</p>
+			<p>We will use an html list and an img tag to display our data. Inside your For Loop, replace the console.log with: </p>
+<code><pre>container.append('&lt;li&gt; &lt;img src='" + movies[i].Poster + "'/&gt;&lt;/li&gt;' +
+	'&lt;li&gt;' + movies[i].Title + '&lt;/li&gt;' +
+	'&lt;li&gt;' + movies[i].Type + '&lt;/li&gt;' +
+	'&lt;li&gt;' + movies[i].Year + '&lt;/li&gt;');</pre></code>
+	<p><strong>Great! Now you can run your code and it SHOULD populate your html page with our 10 movies.</strong></p>
+			
+
+		</div>
+	</div>
+</div>
 <hr/>
 
 
-I hope you enjoyed this tutorial. If you have any questions, please post them below.
 
-Keep coding!
+<div id="6">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+			<hr/>
+			<h4>End Result:</h4>
+			<hr/>
+
+			<p><strong>index.html</strong></p>
+				<img src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-10.30.18-PM.png" alt="Screen Shot 2016-05-17 at 10.30.18 PM" width="1025" height="567" class="aligncenter size-full wp-image-201" />
+
+			<p><strong>main.js</strong></p>
+				<img src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-10.32.15-PM.png" alt="Screen Shot 2016-05-17 at 10.32.15 PM" width="846" height="845" class="aligncenter size-full wp-image-202" />
+
+			<hr/>
+		</div>
+	</div>
+</div>
+
+
+<div id="7">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+			<hr/>
+			<h4>Stretch GOALS!</h4>
+			<hr/>
+
+			<ul>
+			<li><p>Use CSS to make everything look slick and nice.</p></li>
+			<li><p>Use the OMDb API to grab more information from the API and render it on your HTML website.</p></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+		<hr/>
+		<h4>Hope you enjoyed the tutorial. Please send me feedback!</h4>
+		<hr/>
+	</div>
+</div>
