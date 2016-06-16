@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Code For FoCo"
-image:	code-for-foco.png
 date:   2016-05-27 12:04:53 -0700
+image:	code-for-foco.png
 categories: portfolio
 ---
 
