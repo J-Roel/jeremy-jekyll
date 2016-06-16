@@ -59,27 +59,28 @@ img {
 
 
 h1 {
-        position: absolute;
-        width: 90%;
-        top: 50%;
-        left: 50%;
-        color: #000;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);  
+    font-family: $primaryFont;
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    color: #000;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
 }
-h2{ font-size: 2em; font-family: 'Prompt', sans-serif; }
+h2{ font-size: 2em; font-family: $primaryFont }
 h3{
         font-size: 2em; 
-        font-family: 'Titillium Web', sans-serif;
+        font-family: $secondaryFont;
         line-height: 70px; color: #000; 
 }
 
-h4{ font-family: 'Prompt', sans-serif; font-size: 1.4em; color: #6A6B6D; padding: 1%; }
-p{ font-size: 1em; font-family: 'Titillium Web', sans-serif; padding: 1%; }
-a{ font-size: 1em; font-family: 'Titillium Web', sans-serif; color: #000; transition: 0.2s; }
+h4{ font-family: $primaryFont; font-size: 1.4em; color: #6A6B6D; padding: 1%; }
+p{ font-size: 1em; font-family: $secondaryFont; padding: 1%; }
+a{ font-size: 1em; font-family: $secondaryFont; color: #000; transition: 0.2s; }
 a:hover { text-decoration: none; color: #6A6B6D; }
 a:active { text-decoration: none; color: #6A6B6D; }
 li { font-size: 1.2em; }
@@ -89,7 +90,7 @@ li { font-size: 1.2em; }
 }
 .copyright {
     font-size: 1.4em;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: $copyrightFont;
 }
 .text-inset {
     color: rgba(0,0,0,0.9);
@@ -106,7 +107,7 @@ li { font-size: 1.2em; }
 }
 .hero-shadow{
     font-size: 4em;
-    font-family: 'Prompt', sans-serif;
+    font-family: $primaryFont;
     text-shadow: 0 -3px 0 #333,
     0 6px 8px rgba(0,0,0,.4),
     0 9px 10px rgba(0,0,0,.15),
@@ -127,7 +128,7 @@ li { font-size: 1.2em; }
         transform: translate(-50%, -40%);  
 }
 .hero-style{
-    font-family: 'Mr Dafoe', cursive;
+    font-family: $extraFont;
     font-size: 6em;
     text-shadow: 0 -3px 0 #333,
     0 6px 8px rgba(0,0,0,.4),
@@ -253,22 +254,68 @@ nav ul li a{
 /*=================================
     V. FULLSCREEN TEMPLATES
 ===================================*/
-
 #category{
     ul{
         margin: 4%;
     }
 }
+
+/* This will be a big one*/
 #post-content {
+    h4{
+        width: 100%;
+        background: #2F3441;
+    }
+    strong{ 
+        font-weight: bold;
+        text-shadow: 0.5px 0.5px 0px #000;
+    }
+    p {
+        font-size: 1.1em;
+        margin: 0 0 0 2%;
+        padding: 1%;
+        line-height: 20px;
+    }
     a { 
         color: #6A6B6D;
-        background-color: #eee; 
+        text-decoration: underline;
+        line-height: 30px;
     }
     a:hover { 
         color: #222;
 
      }
-
+     ul {
+        padding: 2%;
+        li{
+            font-size: 1em;
+            list-style: decimal;
+            margin: 0 0 0 4%;
+            padding: 0 0 0 1%;
+        }
+        ul li{
+            list-style: disc;
+        }
+    }
+    .dir{
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0 4%;
+        p{
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .fol{
+        padding: 0;
+        margin: 0;
+    }
+    pre{
+        padding: 10px;
+    }
+    code{
+        display: block;
+    }
 }
 
 
