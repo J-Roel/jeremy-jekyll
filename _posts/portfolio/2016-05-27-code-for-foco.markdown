@@ -2,8 +2,9 @@
 layout: post
 title:  "Code For FoCo"
 date:   2016-05-27 12:04:53 -0700
-image:	code-for-foco.png
+permalink: /code-for-foco/
 categories: portfolio
+image:	code-for-foco.png
 ---
 
 <p>Code for FoCo is a collaboration with the City of Fort Collins, Galvanize, and local developers to assist in the creation of community and non-profit websites and web applications.</p> <!--more-->

@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Gimp Imp"
-image:	gimp-imp.png
 date:   2012-04-15 12:04:53 -0700
+permalink: /gimp-imp/
 categories: portfolio
+image:	gimp-imp.png
 tags: [game, games, gimp, imp, video]
 ---
 

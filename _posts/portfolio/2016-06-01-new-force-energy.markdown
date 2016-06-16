@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "New Force Energy"
-image:	new-force-energy.png
 date:   2016-02-01 12:04:53 -0700
+permalink: /new-force-energy/
 categories: portfolio
+image:	new-force-energy.png
 ---
 
 <p><a href="http://www.newforceenergy.com"> New Force Energy Services, Inc.</a></p> 

@@ -3,6 +3,7 @@ layout: post
 title:  "Bluehost to Github Pages"
 image:	chrome-extension.png
 date:   2016-06-07 12:04:53 -0700
+permalink: /bluehost-github-pages/
 categories: blog
 description: Having difficulties getting Bluehost to talk to your gh-pages branch? Yeah, it's tricky. 
 ---

@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Posh Brewing"
-image:	posh-brewing-labels.jpg
 date:   2015-10-01 12:04:53 -0700
+permalink: /posh-brewing/
 categories: portfolio
+image:	posh-brewing-labels.jpg
 ---
 
 <p>A friend of mine decided to brew a batch of homemade beer. In 2015, with the wife complaining of the smell, he finally brewed a beer he felt was worthy of marketing. I had the pleasure of helping brew, drink and make the label.</p> <!--more-->

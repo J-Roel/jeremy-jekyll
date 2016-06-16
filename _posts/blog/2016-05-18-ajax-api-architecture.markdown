@@ -3,6 +3,7 @@ layout: post
 title:  "OMDb API with AJAX"
 date:   2016-05-27 12:04:53 -0700
 author: John Doe
+permalink: /omdb-api-with-ajax/
 categories: blog
 image:	ajax.jpg
 description: This tutorial will guide you through the very basics of building an html page and displaying data retrieved from an API. We will use html, javascript, jQuery, AJAX and the OMDb API endpoint.

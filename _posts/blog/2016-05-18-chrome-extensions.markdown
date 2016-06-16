@@ -3,6 +3,7 @@ layout: post
 title:  "Chrome Extensions"
 image:	chrome-extension.png
 date:   2016-06-07 12:04:53 -0700
+permalink: /chrome-extensions/
 categories: blog
 description: Chrome Extensions and drop downs really are easy to setup. Here I provide two boilerplates and a lightning talk slideshow, so you can get started building your own extension in just a few minutes.
 ---

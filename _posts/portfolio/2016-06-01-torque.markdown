@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Torque3D Demos"
-image:	enchantment.png
 date:   2008-04-15 12:04:53 -0700
+permalink: /torque-3d-demos/
 categories: portfolio
+image:	enchantment.png
 ---
 
 <p>A long time user of Torque Game Engine(non-shader), I really wanted to help on the code base when they updated to Torque3D. As such, I tried to get the creators attention. I learned a lot; like building a video game is insanely difficult. But, I found out that 3D modelling and graphic design can be very gratifying.</p> <!--more--> 

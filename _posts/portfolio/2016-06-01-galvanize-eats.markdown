@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Website Demos"
-image:	galvanize-eats.png
 date:   2015-02-01 12:04:53 -0700
+permalink: /website-demos/
 categories: portfolio
+image:	galvanize-eats.png
 ---
 
 <p>Here are some of my projects that I wanted to showcase. I am really at home with CSS and HTML. I enjoy being creative and not only coming up with new ideas, but I can re-create any modern trendy site.</p><!--more-->
