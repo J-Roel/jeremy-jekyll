@@ -5,7 +5,7 @@ date:   2008-04-15 12:04:53 -0700
 permalink: /torque-3d-demos/
 categories: portfolio
 image:	enchantment.png
-description: A long time user of Torque Game Engine(non-shader), I really wanted to help on the code base when they updated to Torque3D(shaderized). As such, I tried to get the creators attention by creating demos using their new technology.
+description: A long time user of Torque Game Engine(non-shader), I really wanted to help on the code base when they updated to Torque3D(shaderized). As such, I tried to get the creators attention by creating demos using their new technology. My imagination was the limit and the artwork and modeling was so much fun.
 ---
 
 <div class="row">

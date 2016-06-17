@@ -25,7 +25,7 @@ $(document).ready(function(){
               target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
               if (target.length) {
                 $('html, body').animate({
-                  scrollTop: target.offset().top
+                  scrollTop: target.offset().top - 80
                 }, 1000);
                 return false;
               }
@@ -44,7 +44,7 @@ $(document).ready(function(){
       //For each section or item you want faded in
        $('.fadeIn').each( function(i){
             
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - 125;
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             /* If the object is completely visible in the window, fade it it */

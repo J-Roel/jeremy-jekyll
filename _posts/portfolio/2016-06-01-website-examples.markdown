@@ -5,7 +5,7 @@ date:   2015-02-01 12:04:53 -0700
 permalink: /website-demos/
 categories: portfolio
 image:	galvanize-eats.png
-description: Backend, Databases, OpenCV. I like to tackle any programming problem and learn new tech. But I enjoy the front-end user experience the most. Being creative, awesome CSS, and making functional eye-candy is something I could do every day. Here are some random examples of my work.
+description: Backend, Databases, OpenCV. I like to tackle any programming problem and learn new tech. But I enjoy the front-end user experience the most. Being creative, awesome CSS, and making functional eye-candy is something I could do every day. Here are some examples of class projects, older work, and new ideas.
 ---
 
 <div class="row">
@@ -17,6 +17,7 @@ description: Backend, Databases, OpenCV. I like to tackle any programming proble
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 			<a href="https://lexeme.tech/"><img class="repeating-post-image" src="/assets/images/lexeme-tech.png"/></a>
+			<a href="https://crossofglorydenver.org/"><img class="repeating-post-image" src="/assets/images/cross-of-glory.png"/></a>
 		</div>
 		
 	</div>

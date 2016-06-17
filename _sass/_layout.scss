@@ -1,8 +1,4 @@
-#construction{
-    height: 70px;
-    width: 100%;
-    background: yellow;
-}
+
 
 /*  
     STYLES.CSS
@@ -252,9 +248,31 @@ nav ul li a{
         width: 300px;
     }
 }
-
-
-
+#about{
+    quote{
+        font-family: $extraFont;
+        font-size: 3rem;
+    }
+    p{
+        padding: 4%;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+}
+#contact{
+    padding: 5%;
+    .social {
+        display: inline-block;
+        margin: 2%;
+    }
+}
+.artwork{
+    background-color: #fff;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.4);
+    p{
+        padding: 5%;
+    }
+}
 
 
 /*=================================
@@ -480,4 +498,43 @@ footer{
     0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
     40%  { -webkit-transform: translateY(-20px); }
     80% { -webkit-transform: translateY(-10px); }
+}
+
+#block-chart{
+    .t{
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin: 4px;
+        background: rgb(0,255,0);
+        box-shadow: 2px 2px 7px rgba(0,0,0,0.4);
+    }
+    .count{
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: rgb(120,120,140);
+        box-shadow: 1px 1px 7px rgba(0,0,0,0.4);
+    }
+    p{
+            font-size: 14px;
+            font-family: $secondaryFont;
+            font-weight: bolder;
+            position: absolute;
+            width: 90%;
+            top: 50%;
+            left: 50%;
+            color: #000;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+}
+#timeline{
+    background: #fff;
 }

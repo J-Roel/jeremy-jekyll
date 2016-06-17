@@ -52,11 +52,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-#construction {
-  height: 70px;
-  width: 100%;
-  background: yellow; }
-
 /*  
     STYLES.CSS
 
@@ -291,6 +286,26 @@ nav ul li a {
     height: 200px;
     width: 300px; }
 
+#about quote {
+  font-family: "Mr Dafoe", cursive;
+  font-size: 3rem; }
+#about p {
+  padding: 4%;
+  font-size: 1.2em;
+  line-height: 1.5em; }
+
+#contact {
+  padding: 5%; }
+  #contact .social {
+    display: inline-block;
+    margin: 2%; }
+
+.artwork {
+  background-color: #fff;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4); }
+  .artwork p {
+    padding: 5%; }
+
 /*=================================
     V. FULLSCREEN TEMPLATES
 ===================================*/
@@ -463,3 +478,36 @@ footer {
     -webkit-transform: translateY(-20px); }
   80% {
     -webkit-transform: translateY(-10px); } }
+#block-chart .t {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 4px;
+  background: lime;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4); }
+#block-chart .count {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #78788c;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4); }
+#block-chart p {
+  font-size: 14px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bolder;
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  color: #000;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+#timeline {
+  background: #fff; }

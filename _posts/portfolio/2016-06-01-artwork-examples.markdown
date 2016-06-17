@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Artwork Examples"
+date:   2010-10-01 12:04:53 -0700
+permalink: /posh-brewing/
+categories: portfolio
+image:	halloween-flyer.jpg
+description: Examples of artwork I've done over the years.
+---
+
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-9 col-md-offset-1 col-lg-9 col-lg-offset-1">
+		<hr/>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/posh-brewing-labels.jpg"/>
+				<p>In 2015, my friend finally brewed a beer he felt was worth marketing. I had the pleasure of helping brew, drink and make the label.</p>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/halloween-flyer.jpg"/>
+				<p>Halloween flyer I made for our golf course where I bartended at night. How many scary faces do you see?</p>
+			</div>
+		</div>
+
+			
+	</div>
+</div>
