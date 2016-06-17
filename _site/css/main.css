@@ -339,7 +339,13 @@ nav ul li a {
   padding: 10px; }
 #post-content code {
   display: block; }
+#post-content .repeating-post-image {
+  height: 300px;
+  max-width: 500px; }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  #post-content .repeating-post-image {
+    height: 150px; } }
 /*==================================================
     VI.  LIST CLASSES
 ====================================================*/
