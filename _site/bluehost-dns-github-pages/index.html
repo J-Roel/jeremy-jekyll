@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Bluehost to Github Pages</title>
-  <meta name="description" content="									">
+  <title>Bluehost DNS doesn&#39;t work with Github Pages</title>
+  <meta name="description" content="									What is this trickery?!						If you are like me and are doing a millions things at a time, you can seriously get caught up on the details.			Call it...">
 
   
 
@@ -20,7 +20,7 @@
 
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://jr-web.ninja/bluehost-github-pages/">
+  <link rel="canonical" href="http://jr-web.ninja/bluehost-dns-github-pages/">
   <link rel="alternate" type="application/rss+xml" title="Jeremy Roelfs" href="http://jr-web.ninja/feed.xml">
 
 
@@ -60,7 +60,7 @@
       <div class="wrapper"> -->
         <section class="row">
 	<div id="hero-page" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<h1 class="text-center hero-shadow">Bluehost to Github Pages</h1>
+		<h1 class="text-center hero-shadow">Bluehost DNS doesn't work with Github Pages</h1>
 	</div>
 </section>
 
@@ -73,15 +73,15 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
 				
-				    <img class="center-block" src="/assets/images/chrome-extension.png"/>
+				    <img class="center-block" src="/assets/images/bluehost-github-pages.png"/>
 				
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-				<h4>Bluehost to Github Pages</h4>
-				<p>Jun 7, 2016</p>
+				<h4>Bluehost DNS doesn't work with Github Pages</h4>
+				<p>Jun 16, 2016</p>
 				<hr/>
 				
-            		<p>Having difficulties getting Bluehost to talk to your gh-pages branch? Yeah, it's tricky.<p>
+            		<p>Having difficulties getting Bluehost to talk to your gh-pages branch? It's not as bad as it seems, but Bluehost sure needs to get with the UI. Or, at least get some documentation.<p>
           		
 			</div>
 		</div>
@@ -93,12 +93,37 @@
    		<div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
 		<div class="row">
-			
-
-
-		</div>
-	</div>
-</div>
+			<hr />
+			<h4>What is this trickery?!</h4>
+			<hr />
+			<p>If you are like me and are doing a millions things at a time, you can seriously get caught up on the details.</p>
+			<p>Call it bad UI, call it... really bad UI.</p>
+			<p>But certain things <strong>should just make sense!</strong></p>
+			<hr />
+			<p>Alas. Do not lose hope. I know there isn't a single bit of documentation regarding this issue on Bluehost's behalf.</p>
+			<p>But believe me... it's a lot more simple than you think!</p>
+			<hr />
+			<ul>
+				<li><p>Use the @ in the host and either 199.27.79.133 or 192.30.252.153 in the Points To:</p>
+					<div class="row">
+						<img src="/assets/images/dns-bluehost.png" style="width: 300px;" />
+					</div>
+					<p>The IP addresses are Github Pages Servers. The @ is for the Apex or root of your domain (www.mydomain.com and mydomain.com)<p>
+					<p>Now go ahead and click "add record"</p>
+				&lt;/li&gt;
+				<li><p>Scroll Down to CNAME (Alias).</p>
+				<p>In the first box you should have www in the host.</p>
+				<p>Click Edit, and put your github pages url in "points to" like so:</p>
+				<img src="/assets/images/dns-bluehost-2.png" style="width: 800px;" />
+				<p>Click save</p>
+				</li>
+				<li><p>Now Wait... for up to four hours. It took mine about an hour.</p></li>
+				<li><p>Keep checking your url. You should eventually see your website or a 404.</p></li>
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</p></p></li></ul></div></div></div>
 
    	</div>
 	

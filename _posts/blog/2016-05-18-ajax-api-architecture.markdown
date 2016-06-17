@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "OMDb API with AJAX"
-date:   2016-05-27 12:04:53 -0700
+date:   2016-06-15 12:04:53 -0700
 author: John Doe
 permalink: /omdb-api-with-ajax/
 categories: blog
@@ -10,9 +10,7 @@ description: This tutorial will guide you through the very basics of building an
 ---
 
 <div class="row">
-	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-	</div>
-	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+	<div class="col-xs-8 col-sm-8 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
 		<div class="row">
 		<hr/>
 			<p><strong>Prerequisites:</strong></p>

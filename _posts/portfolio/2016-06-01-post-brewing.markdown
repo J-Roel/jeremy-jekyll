@@ -7,6 +7,6 @@ categories: portfolio
 image:	posh-brewing-labels.jpg
 ---
 
-<p>A friend of mine decided to brew a batch of homemade beer. In 2015, with the wife complaining of the smell, he finally brewed a beer he felt was worthy of marketing. I had the pleasure of helping brew, drink and make the label.</p> <!--more-->
+<p>Years ago, a friend of mine decided to brew a batch of homemade beer. In 2015, with the wife complaining of the smell, he finally brewed a beer he felt was worthy of marketing. I had the pleasure of helping brew, drink and make the label.</p> <!--more-->
 <p>We set out first to get an idea of what we wanted to name the brew. He always mocked the location where he kept his brewing equipment as the "piece of shit house"... And so it was. POSH Brewing was born.</p> 
 <p>We ended up making variations of #3 as it leaned towards the current style of custom beers.</p>

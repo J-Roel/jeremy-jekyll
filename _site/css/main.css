@@ -311,6 +311,7 @@ nav ul li a {
   line-height: 20px; }
 #post-content a {
   color: #6A6B6D;
+  background: rgba(0, 0, 0, 0.1);
   text-decoration: underline;
   line-height: 30px; }
 #post-content a:hover {
