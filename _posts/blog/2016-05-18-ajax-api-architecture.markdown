@@ -406,7 +406,7 @@ for(var i = 0; i <= movies.length-1; i++){
 <div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
 		<hr/>
-		<h4>Hope you enjoyed the tutorial. Please send me feedback!</h4>
+		<h4>Hope you enjoyed the tutorial.</h4>
 		<hr/>
 	</div>
 </div>
