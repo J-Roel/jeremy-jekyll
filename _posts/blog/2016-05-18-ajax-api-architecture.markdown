@@ -51,7 +51,7 @@ description: This tutorial will guide you through the very basics of building an
 				<li><p>Your program is running on a user's computer.</p></li>
 				<li><p>Your program tells the browser what data it needs in a package called a XHLHttpRequest Object.</p></li>
 				<li><p>The Request Object tells the user's browser to send a request to a certain location where this data is stored.</p></li>
-				<li><p>The internet location that intercepted your request, then determines what information to send back, based on your Request Object asked for.</p></li>
+				<li><p>The internet location that intercepted your request, then determines what information to send back, based on your Request Object.</p></li>
 				<li><p>Your program then has to set and wait for the data to be returned from the endpoint (or API). This is called an Asynchronous function.</p></li>
 				<li><p>Once returned, the data can now be parsed.</p></li>
 				<li><p>We then tell the browser how to utilize and render the data.</p></li>
@@ -397,6 +397,7 @@ for(var i = 0; i <= movies.length-1; i++){
 			<ul>
 			<li><p>Use CSS to make everything look slick and nice.</p></li>
 			<li><p>Use the OMDb API to grab more information from the API and render it on your HTML website.</p></li>
+			<li><p>Use the Chrome Extension Postman. It is an app that allows you to build urls with different parameters. If you are building full-stack applications, this is a time saving tool.</p></li>
 			</ul>
 
 		</div>

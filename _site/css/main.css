@@ -256,7 +256,7 @@ nav ul li a {
 #hero-page is for our page.html, post.html and category.html(archive)*/
 #hero, #hero-page {
   height: 750px;
-  background: linear-gradient(to bottom right, rgba(33, 37, 49, 0.2), rgba(33, 37, 49, 0.2)), url("../assets/images/hero-one.png");
+  background: linear-gradient(to bottom right, rgba(63, 67, 79, 0.2), rgba(63, 67, 79, 0.2)), url("../assets/images/hero-one.png");
   background-size: 128px 128px; }
   #hero img, #hero-page img {
     position: absolute;
