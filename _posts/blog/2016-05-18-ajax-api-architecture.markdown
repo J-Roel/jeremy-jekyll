@@ -49,7 +49,7 @@ description: This tutorial will guide you through the very basics of building an
 			
 			<ul>
 				<li><p>Your program is running on a user's computer.</p></li>
-				<li><p>Your program tells the browser what data it needs in a package called an XHLHttpRequest Object.</p></li>
+				<li><p>Your program tells the browser what data it needs in a package called a XHLHttpRequest Object.</p></li>
 				<li><p>The Request Object tells the user's browser to send a request to a certain location where this data is stored.</p></li>
 				<li><p>The internet location that intercepted your request, then determines what information to send back, based on your Request Object asked for.</p></li>
 				<li><p>Your program then has to set and wait for the data to be returned from the endpoint (or API). This is called an Asynchronous function.</p></li>
@@ -249,7 +249,7 @@ description: This tutorial will guide you through the very basics of building an
 			What does that look like once it leaves our computer?</p>
 			<p>Here is a quick break down:</p>
 
-			<img class="aligncenter wp-image-171 size-full" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-16-at-10.56.48-PM.png" alt="Screen Shot 2016-05-16 at 10.56.48 PM" width="530" height="487" />
+			<img class="aligncenter wp-image-171 size-full" src="/assets/images/server-client.png" alt="Screen Shot 2016-05-16 at 10.56.48 PM" width="530" height="487" />
 
 			<p>Great! You now have the basic concept of what makes the internet tick. We also understand the purpose behind APIs, and how to communicate with them. Let's build our AJAX function and see some data.</p>
 		</div>
@@ -321,13 +321,13 @@ description: This tutorial will guide you through the very basics of building an
 				<li><p><strong>Run the program!</strong></p></li>
 				<li>
 					<p>If all is well and if you typed "Frozen", you should recieve this:</p>
-					<img class="aligncenter size-full wp-image-191" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-11.59.11-AM.png" alt="Screen Shot 2016-05-17 at 11.59.11 AM" width="752" height="378" />
+					<img class="aligncenter size-full wp-image-191" src="/assets/images/frozen-results.png" alt="Screen Shot 2016-05-17 at 11.59.11 AM" width="752" height="378" />
 					<p>Click the little arrow beside Object to view its contents.</p>
 				</li>
 				<li><p>Access Array and loop through it.</p>
 					<ul>
-						<li><p>Use dot notation on the object.</p></li>
-						<li><p> We will then assign our object to a variable called "movies."</p></li>
+						<li><p>Use dot notation on the object to access the Search array in the returned object.</p></li>
+						<li><p> We will then assign the Search array to a variable called "movies."</p></li>
 						<li><p>Next we need to loop through the array of movies</p></li>
 						<li><p>On your success function of the ajax call, remove console.log("Done: ", results); and add this:</p>
 <code><pre>//store our search results in a variable called movies
@@ -354,7 +354,7 @@ for(var i = 0; i <= movies.length-1; i++){
 			<p><strong>Pretty simple right?</strong></p>
 			<p>Now we will use jQuery's append method to add the movies to our html node that we stored in a variale earlier called "container"</p>
 			<p>We will use an html list and an img tag to display our data. Inside your For Loop, replace the console.log with: </p>
-<code><pre>container.append('&lt;li&gt; &lt;img src='" + movies[i].Poster + "'/&gt;&lt;/li&gt;' +
+<code><pre>container.append('&lt;li&gt; &lt;img src=' + movies[i].Poster + '/&gt;&lt;/li&gt;' +
 	'&lt;li&gt;' + movies[i].Title + '&lt;/li&gt;' +
 	'&lt;li&gt;' + movies[i].Type + '&lt;/li&gt;' +
 	'&lt;li&gt;' + movies[i].Year + '&lt;/li&gt;');</pre></code>
@@ -376,10 +376,10 @@ for(var i = 0; i <= movies.length-1; i++){
 			<hr/>
 
 			<p><strong>index.html</strong></p>
-				<img src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-10.30.18-PM.png" alt="Screen Shot 2016-05-17 at 10.30.18 PM" width="1025" height="567" class="aligncenter size-full wp-image-201" />
+				<img src="/assets/images/index-html-omdb-ajax.png" alt="Screen Shot 2016-05-17 at 10.30.18 PM" width="1025" height="567" class="aligncenter size-full wp-image-201" />
 
 			<p><strong>main.js</strong></p>
-				<img src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/05/Screen-Shot-2016-05-17-at-10.32.15-PM.png" alt="Screen Shot 2016-05-17 at 10.32.15 PM" width="846" height="845" class="aligncenter size-full wp-image-202" />
+				<img src="/assets/images/main-js.png" width="846" height="845" class="aligncenter size-full wp-image-202" />
 
 			<hr/>
 		</div>

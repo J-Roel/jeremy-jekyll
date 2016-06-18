@@ -286,13 +286,15 @@ nav ul li a {
     height: 200px;
     width: 300px; }
 
-#about quote {
-  font-family: "Mr Dafoe", cursive;
-  font-size: 3rem; }
-#about p {
-  padding: 4%;
-  font-size: 1.2em;
-  line-height: 1.5em; }
+#about {
+  padding: 4% 0 4% 0; }
+  #about quote {
+    font-family: "Mr Dafoe", cursive;
+    font-size: 3rem; }
+  #about p {
+    padding: 4%;
+    font-size: 1.2em;
+    line-height: 1.5em; }
 
 #contact {
   padding: 5%; }
