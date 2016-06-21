@@ -102,6 +102,9 @@ img {
   padding-top: 4%;
   padding-bottom: 4%; }
 
+section {
+  background: transparent; }
+
 /*=================================
     II. TYPOGRAPHY CLASSES
 ===================================*/
@@ -236,6 +239,11 @@ nav ul li a {
   #hero-page img {
     height: 200px;
     width: 300px; }
+
+#about {
+  background: transparent; }
+  #about img {
+    width: 200px !important; }
 
 .social {
   display: inline-block;

@@ -53,7 +53,9 @@ img {
     padding-top: 4%;
     padding-bottom: 4%;
 }
-
+section{
+    background: transparent;
+}
 
 /*=================================
     II. TYPOGRAPHY CLASSES
@@ -187,6 +189,12 @@ nav ul li a{
     }
 }
 
+#about{
+    background: transparent;
+    img{
+        width: 200px !important;
+    }
+}
 
 
 
