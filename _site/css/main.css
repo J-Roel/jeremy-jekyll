@@ -92,7 +92,7 @@ table {
 ===================================*/
 body {
   /*set default colors*/
-  background: #ccc;
+  background: #F3F3F3;
   color: #6A6B6D; }
 
 img {
@@ -107,16 +107,16 @@ img {
 ===================================*/
 h1 {
   font-family: "Prompt", sans-serif;
-  position: absolute;
-  width: 90%;
-  top: 50%;
-  left: 50%;
-  color: #000;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  /* position: absolute;
+   width: 90%;
+   top: 50%;
+   left: 50%;
+   color: #000;
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%); */ }
 
 h2 {
   font-size: 2em;
@@ -126,12 +126,12 @@ h3 {
   font-size: 2em;
   font-family: "Titillium Web", sans-serif;
   line-height: 70px;
-  color: #000; }
+  color: #F3F3F3; }
 
 h4 {
   font-family: "Prompt", sans-serif;
   font-size: 1.4em;
-  color: #6A6B6D;
+  color: #F3F3F3;
   padding: 1%; }
 
 p {
@@ -162,7 +162,7 @@ li {
   border-radius: 5%; }
 
 .copyright {
-  font-size: 1.4em;
+  font-size: 140%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .text-inset {
@@ -170,7 +170,7 @@ li {
   text-shadow: 1px 1px 2px rgba(155, 155, 155, 0.1); }
 
 .text-inset-lite {
-  background-color: #ddd;
+  background-color: #F3F3F3;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -178,9 +178,22 @@ li {
   text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px; }
 
 .hero-shadow {
-  font-size: 4em;
-  font-family: "Prompt", sans-serif;
-  text-shadow: 0 -3px 0 #333, 0 6px 8px rgba(0, 0, 0, 0.4), 0 9px 10px rgba(0, 0, 0, 0.15), 0 30px 10px rgba(0, 0, 0, 0.18), 0 15px 10px rgba(0, 0, 0, 0.21); }
+  font-size: 550%;
+  font-family: "Rye", cursive;
+  /*text-shadow: 0 -3px 0 #333,
+  0 6px 8px rgba(0,0,0,.4),
+  0 9px 10px rgba(0,0,0,.15),
+  0 30px 10px rgba(0,0,0,.18),
+  0 15px 10px rgba(0,0,0,.21);*/
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); }
+
+.hero-inset {
+  font-size: 450%;
+  font-family: "Rye", cursive;
+  /* color: rgba(0,0,0,0.9);
+   text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+   -webkit-transition: translateY(rotate 5deg);*/ }
 
 .hero-position {
   /* used on landing page only */
@@ -189,7 +202,7 @@ li {
   width: 70%;
   top: 40%;
   left: 50%;
-  color: #000;
+  color: #F3F3F3;
   -webkit-transform: translate(-50%, -40%);
   -moz-transform: translate(-50%, -40%);
   -ms-transform: translate(-50%, -40%);
@@ -197,20 +210,15 @@ li {
   transform: translate(-50%, -40%); }
 
 .hero-style {
-  font-family: "Mr Dafoe", cursive;
-  font-size: 6em;
-  text-shadow: 0 -3px 0 #333, 0 6px 8px rgba(0, 0, 0, 0.4), 0 9px 10px rgba(0, 0, 0, 0.15), 0 30px 10px rgba(0, 0, 0, 0.18), 0 15px 10px rgba(0, 0, 0, 0.21);
-  /* position */
-  position: absolute;
-  width: 55%;
-  top: 50%;
-  left: 50%;
-  color: #000;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  font-family: "Prompt", sans-serif;
+  font-size: 400%;
+  color: rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  /*text-shadow: 0 -3px 0 #333,
+  0 6px 8px rgba(0,0,0,.4),
+  0 9px 10px rgba(0,0,0,.15),
+  0 30px 10px rgba(0,0,0,.18),
+  0 15px 10px rgba(0,0,0,.21);*/ }
 
 /*=================================
     III.    HEADER CLASSES
@@ -222,7 +230,8 @@ header {
   height: 70px;
   width: 100vw;
   z-index: 100;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(47, 52, 65, 0.7);
   transition: background-color 0.7s;
   /* see effects.js scroll effect */ }
 
@@ -237,7 +246,7 @@ nav ul li {
   padding: 0 2% 0 2%; }
 
 nav ul li a {
-  color: #000; }
+  color: #F3F3F3; }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   header nav ul {
@@ -256,28 +265,32 @@ nav ul li a {
 #hero-page is for our page.html, post.html and category.html(archive)*/
 #hero, #hero-page {
   height: 750px;
-  background: linear-gradient(to bottom right, rgba(63, 67, 79, 0.2), rgba(63, 67, 79, 0.2)), url("../assets/images/hero-one.png");
-  background-size: 128px 128px; }
+  padding: 0;
+  margin: 0;
+  background: rgba(47, 52, 65, 0.5);
+  overflow: hidden;
+  /* img:empty{
+       top: 50%;
+       left: 50%;
+       -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+   }*/ }
   #hero img, #hero-page img {
-    position: absolute;
-    max-width: 80%;
+    /*position: absolute;
+    max-width: 20%;
     top: 10%;
-    left: 10%; }
-  #hero img:empty, #hero-page img:empty {
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    left: 10%;*/
+    width: 55%; }
   #hero p, #hero-page p {
     color: #2F3441; }
 
 #hero-page {
   height: 350px; }
   #hero-page h1 {
-    font-size: 4rem; }
+    font-size: 200%; }
   #hero-page time {
     padding: 0 2% 0 2%; }
   #hero-page .author {
@@ -297,7 +310,8 @@ nav ul li a {
     line-height: 1.5em; }
 
 #contact {
-  padding: 5%; }
+  padding: 5%;
+  background: transparent; }
   #contact .social {
     display: inline-block;
     margin: 2%; }
@@ -459,18 +473,8 @@ footer {
   opacity: 0; }
 
 #scrollJumper {
-  color: #000;
+  color: #F3F3F3;
   text-shadow: 1px 1px 7px rgba(255, 255, 255, 0.2);
-  position: absolute;
-  width: 55%;
-  top: 80%;
-  left: 50%;
-  color: #000;
-  -webkit-transform: translate(-50%, -80%);
-  -moz-transform: translate(-50%, -80%);
-  -ms-transform: translate(-50%, -80%);
-  -o-transform: translate(-50%, -80%);
-  transform: translate(-50%, -80%);
   -webkit-animation: bounce 2s infinite ease-in-out; }
 
 @-webkit-keyframes bounce {
@@ -513,3 +517,10 @@ footer {
 
 #timeline {
   background: #fff; }
+
+/* Parallax.js */
+.parallax-window {
+  margin: 0;
+  padding: 0;
+  height: inherit;
+  background: transparent; }

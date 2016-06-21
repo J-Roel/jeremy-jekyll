@@ -16,6 +16,7 @@
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -27,10 +28,11 @@
 
   
 
-  <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/5afbe70f2b.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script type="text/javascript" src="/assets/js/effects.js"></script>
+  <script type="text/javascript" src="/assets/js/parallax.js"></script>
 </head>
 
   
@@ -39,7 +41,7 @@
     <header>
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-        <a href="/"><h3 class="text-center text-inset">Jeremy Roelfs</h3></a>
+        <a href="/"><h3 class="text-center">Jeremy Roelfs</h3></a>
     </div>
     <div class="col-xs-0 col-sm-0 col-md-7 col-lg-7">
       <nav>
@@ -62,10 +64,12 @@
         <!-- Hero -->
 <section class="row">
   <div id="hero" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <h1 class="text-center hero-shadow hero-position">Full Stack Developer and More</h1>
-      <h1 class="text-center hero-style">w/Style</h1>
-      <a href="#about"><h4 id="scrollJumper"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></h4></a>
-  </div>
+  	<div class="parallax-window" data-parallax="scroll" data-image-src="/assets/images/hero-one.jpg"></div>
+      <div class="hero-position">
+	    <img class="center-block" src="/assets/images/jeremy-logo-big.png"/>
+      </div>
+      <a href="#about"><h4 class="text-center" id="scrollJumper"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></h4></a>
+  	</div>
 </section>
 
 
@@ -87,6 +91,7 @@
 <section id="contact">
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center">
+		<div class="parallax-window" data-parallax="scroll" data-image-src="/assets/images/hero-one.jpg"></div>
             <div class="text-center social fadeIn"><a href="mailTo:jeremyroelfs@icloud.com"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a></div>
             <div class="text-center social fadeIn"><a href="http://github.com/jeremyroelfs"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a></div>
             <Div class="text-center social fadeIn"><a href="https://twitter.com/The_J_Roel"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></i></a></div>

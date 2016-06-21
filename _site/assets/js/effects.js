@@ -15,8 +15,6 @@ $(document).ready(function(){
 	});
 
 
-
-
 	/* Smooth Scrolling */
 	$(function() {
           $('a[href*="#"]:not([href="#"])').click(function() {
@@ -33,13 +31,18 @@ $(document).ready(function(){
         });
     });
 
+
+
+
+
 	/* Scroll Effect - can elements at different positions */
 	$(window).on("scroll", function() {
+
         //Fixed Nav bar 
         if($(window).scrollTop() > 35) {
             $('header').css('background-color', '#2F3441');
         } else {
-            $('header').css('background-color', 'transparent');
+            $('header').css('background-color', 'rgba(47,52,65,0.4)');
         }    
       //For each section or item you want faded in
        $('.fadeIn').each( function(i){
@@ -48,7 +51,7 @@ $(document).ready(function(){
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
+            if( bottom_of_window > (bottom_of_object - 100) ){
                 
                 $(this).animate({'opacity':'1'},500);
                     

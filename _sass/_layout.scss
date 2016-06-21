@@ -43,7 +43,7 @@
 ===================================*/
 body{
     /*set default colors*/
-    background: #ccc;
+    background: #F3F3F3;
     color: #6A6B6D;
 }
 img {
@@ -62,7 +62,7 @@ img {
 
 h1 {
     font-family: $primaryFont;
-    position: absolute;
+   /* position: absolute;
     width: 90%;
     top: 50%;
     left: 50%;
@@ -71,16 +71,17 @@ h1 {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%); */ 
 }
-h2{ font-size: 2em; font-family: $primaryFont }
+h2{ font-size: 2em; font-family: $primaryFont; }
 h3{
         font-size: 2em; 
         font-family: $secondaryFont;
-        line-height: 70px; color: #000; 
+        line-height: 70px; 
+        color: #F3F3F3; 
 }
 
-h4{ font-family: $primaryFont; font-size: 1.4em; color: #6A6B6D; padding: 1%; }
+h4{ font-family: $primaryFont; font-size: 1.4em; color: #F3F3F3; padding: 1%; }
 p{ font-size: 1em; font-family: $secondaryFont; padding: 1%; }
 a{ font-size: 1em; font-family: $secondaryFont; color: #000; transition: 0.2s; }
 a:hover { text-decoration: none; color: #6A6B6D; }
@@ -91,7 +92,7 @@ li { font-size: 1.2em; }
     border-radius: 5%;
 }
 .copyright {
-    font-size: 1.4em;
+    font-size: 140%;
     font-family: $copyrightFont;
 }
 .text-inset {
@@ -99,7 +100,7 @@ li { font-size: 1.2em; }
     text-shadow: 1px 1px 2px rgba(155,155,155,0.1);
 }
 .text-inset-lite{
-    background-color: #ddd;
+    background-color: #F3F3F3;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -108,21 +109,32 @@ li { font-size: 1.2em; }
 
 }
 .hero-shadow{
-    font-size: 4em;
-    font-family: $primaryFont;
-    text-shadow: 0 -3px 0 #333,
+    font-size: 550%;
+    font-family: $westernFont;
+    /*text-shadow: 0 -3px 0 #333,
     0 6px 8px rgba(0,0,0,.4),
     0 9px 10px rgba(0,0,0,.15),
     0 30px 10px rgba(0,0,0,.18),
-    0 15px 10px rgba(0,0,0,.21);
+    0 15px 10px rgba(0,0,0,.21);*/
+    color: rgba(0,0,0,0.7);
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
 }
+.hero-inset{
+    font-size: 450%;
+    font-family: $westernFont;
+   /* color: rgba(0,0,0,0.9);
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+    -webkit-transition: translateY(rotate 5deg);*/
+}
+
+
 .hero-position{ /* used on landing page only */
     /* Postion */
     position: absolute;
         width: 70%;
         top: 40%;
         left: 50%;
-        color: #000;
+        color: #F3F3F3;
         -webkit-transform: translate(-50%, -40%);
         -moz-transform: translate(-50%, -40%);
         -ms-transform: translate(-50%, -40%);
@@ -130,27 +142,16 @@ li { font-size: 1.2em; }
         transform: translate(-50%, -40%);  
 }
 .hero-style{
-    font-family: $extraFont;
-    font-size: 6em;
-    text-shadow: 0 -3px 0 #333,
+    font-family: $primaryFont;
+    font-size: 400%;
+     color: rgba(0,0,0,0.9);
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+    /*text-shadow: 0 -3px 0 #333,
     0 6px 8px rgba(0,0,0,.4),
     0 9px 10px rgba(0,0,0,.15),
     0 30px 10px rgba(0,0,0,.18),
-    0 15px 10px rgba(0,0,0,.21);
-
-    /* position */
-    position: absolute;
-    width: 55%;
-    top: 50%;
-    left: 50%;
-    color: #000;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); 
+    0 15px 10px rgba(0,0,0,.21);*/
 }
-
 /*=================================
     III.    HEADER CLASSES
 ===================================*/
@@ -161,7 +162,8 @@ header{
     height: 70px;
     width: 100vw;
     z-index: 100;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.8);
+    background-color: rgba(47,52,65,0.7);
     transition: background-color 0.7s; /* see effects.js scroll effect */
 }
 
@@ -178,7 +180,7 @@ nav ul li{
 
 }
 nav ul li a{
-    color: #000;
+    color: #F3F3F3;
 }
 
 
@@ -210,16 +212,18 @@ nav ul li a{
 #hero-page is for our page.html, post.html and category.html(archive)*/
 #hero, #hero-page{
     height: 750px;
-    background: linear-gradient(to bottom right,rgba(63,67,79,0.2),rgba(63,67,79,0.2)), url('../assets/images/hero-one.png');
-    background-size: 128px 128px;
-    
+    padding: 0;
+    margin: 0;
+    background: rgba(47,52,65,0.5);
+    overflow:hidden;
     img {
-        position: absolute;
-        max-width: 80%;
+        /*position: absolute;
+        max-width: 20%;
         top: 10%;
-        left: 10%;
+        left: 10%;*/
+        width: 55%;
     }
-    img:empty{
+   /* img:empty{
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
@@ -227,7 +231,7 @@ nav ul li a{
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-    }
+    }*/
     p{
         color: #2F3441;
     }
@@ -235,7 +239,7 @@ nav ul li a{
 #hero-page{ 
     height: 350px;
     h1{
-        font-size: 4rem;
+        font-size: 200%;
     }
     time{
         padding: 0 2% 0 2%;
@@ -248,6 +252,7 @@ nav ul li a{
         width: 300px;
     }
 }
+
 #about{
     padding:4% 0 4% 0;
     quote{
@@ -263,6 +268,7 @@ nav ul li a{
 }
 #contact{
     padding: 5%;
+    background:transparent;
     .social {
         display: inline-block;
         margin: 2%;
@@ -481,18 +487,8 @@ footer{
 
 
 #scrollJumper{
-    color: #000;
+    color: #F3F3F3;
     text-shadow: 1px 1px 7px rgba(255,255,255,0.2);
-    position: absolute;
-    width: 55%;
-    top: 80%;
-    left: 50%;
-    color: #000;
-    -webkit-transform: translate(-50%, -80%);
-    -moz-transform: translate(-50%, -80%);
-    -ms-transform: translate(-50%, -80%);
-    -o-transform: translate(-50%, -80%);
-    transform: translate(-50%, -80%); 
     -webkit-animation: bounce 2s infinite ease-in-out;
 }
 
@@ -539,4 +535,14 @@ footer{
 }
 #timeline{
     background: #fff;
+}
+
+
+
+/* Parallax.js */
+.parallax-window{
+    margin:0;
+    padding:0;
+    height: inherit;
+    background: transparent;
 }
