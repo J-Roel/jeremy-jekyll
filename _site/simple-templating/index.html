@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Simple Templating</title>
+  <meta name="description" content="									Simple Templating						Simple templating works by gathering all the template tags, then for each it makes an asynchronous call to the templates fold...">
+
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://jr-web.ninja/simple-templating/">
+  <link rel="alternate" type="application/rss+xml" title="Jeremy Roelfs" href="http://jr-web.ninja/feed.xml">
+
+
+  
+
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/5afbe70f2b.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/assets/js/effects.js"></script>
+  <script type="text/javascript" src="/assets/js/parallax.js"></script>
+</head>
+
+  
+  <body class="container-fluid">
+
+    <header>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+        <a href="/"><h3 class="text-center">Jeremy Roelfs</h3></a>
+    </div>
+    <div class="col-xs-0 col-sm-0 col-md-7 col-lg-7">
+      <nav>
+        <ul class="text-center">
+            <li><a href="/#about">About</a></li>
+
+            
+              
+                <li><a href="/category/portfolio/">Portfolio</a></li>
+              
+            
+              
+                <li><a href="/category/blog/">Blog</a></li>
+              
+            
+              
+
+              
+            
+            <!-- <li class="hire"><a href="/#hire">Hire</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+    
+    <!-- <div class="page-content">
+      <div class="wrapper"> -->
+        <section class="row">
+	<div id="hero-page" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	 <div class="parallax-window" data-parallax="scroll" data-image-src="/assets/images/hero-one.jpg"></div>
+	 <div class="hero-position">
+		<h1 class="text-center hero-font">Simple Templating</h1>
+	</div>
+	</div>
+</section>
+
+<article class="row marg">
+	
+	
+	<div id="category" class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				
+				    <img class="center-block hero-page-logo" src="/assets/images/default.png"/>
+				
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+				<h4>Simple Templating</h4>
+				<p>Jun 16, 2016</p>
+				<hr/>
+				
+            		<p>Ever needed a template engine? That just does templates and nothing complicated? Here is a little slice of my Simple Blogger software. It finds your template tags and loads the corresponding file dynamically; no build tooling or servers required<p>
+          		
+			</div>
+		</div>
+
+	</div>
+
+	
+   	<div id="post-content">
+   		<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+		<div class="row">
+			<hr />
+			<h4>Simple Templating</h4>
+			<hr />
+			<p>Simple templating works by gathering all the template tags, then for each it makes an asynchronous call to the templates folder and grabs the html. It then replaces the template tag with the html.</p>
+			<p>Pros: Fast, super easy, perfect for small portfolios, simple sales sites or blogs</p>
+			<p>Cons: Makes calls for each template which could potentially be expensive on a low bandwidth device.</p>
+
+			<hr />
+			<p><strong>To use:</strong></p>
+			<ul>
+				<li><p>Must have jQuery installed.</p></li>
+				<li><p>Copy the code below and include it in your scripts at the bottom of your html file below jQuery.</p>
+					<code><pre>
+function buildTemplates(elToBuild, listElToBuild){
+
+	if(elToBuild === "" || elToBuild == null || elToBuild == undefined){
+		ourNodeToBuildOn = $("template");//All lists on DOM
+	} else {
+		ourNodeToBuildOn = elToBuild;
+	}
+
+	var count = -1;
+	ourNodeToBuildOn.each(function( index ){
+		count++;
+	});
+	
+	ourNodeToBuildOn.first().attr('link', function(){
+		
+		var templateLink = "/templates/" + $(this).attr('link');
+		$.ajax({
+			method: "GET",
+			url: templateLink,
+			context: this,
+			success : function(result){
+				var theHtml = result.toString();
+				$(this).replaceWith(theHtml);
+			},
+			error : function(err){
+				console.error("@ERROR Simple Blogger: \n Error Loading Template. \n Check &lt;template link=''&gt;&lt;/template&gt; tags - Make sure you are referencing a valid link and that the html file exists in the template directory. \n", err);
+				alert("@ERROR Simple Blogger: \n Error Loading Template. \n Check &lt;template link=''&gt;&lt;/template&gt; tags - Make sure you are referencing a valid link and that the html file exists in the template directory. Check console for more information. \n", err);
+				count = 0;
+			},
+			complete : function(info){
+				if(count &gt; 0){
+					updateDOM();
+					buildTemplates(elToBuild);
+				} else {
+					//Next build our static content at a folder location
+					buildLists(listElToBuild);//Only after all templates are loaded
+				}
+			}
+		});
+	});
+};//End buildTemplates
+
+
+				</pre></code>
+				</li>
+				<li><p>Add a folder called "templates" to your root. Must be called templates.</p></li>
+				<li><p>Place the necessary files in there, like header.html. You don't need the head tags or scripts or anything, just the html elements for your header.</p></li>
+				<li><p>In the HTML file (like index.html), you need to put a template tag, with the link attribute to the file you want to load. It defaults to the templates folder on your root. So my index.html looks like this:</p>
+					<code><pre>
+&lt;template link="header.html"&gt;&lt;/template&gt;
+&lt;template link="body.html"&gt;&lt;/template&gt;
+&lt;template link="footer.html"&gt;&lt;/template&gt;
+					</pre></code>
+				</li>
+			</ul>
+
+			<hr />
+			<h4>Hope this helps!</h4>
+			<hr />
+
+
+			
+		</div>	
+	</div>
+</div>
+
+   	</div>
+	
+</article>
+
+
+
+
+     <!--  </div>
+    </div> -->
+
+    <footer class="row marg">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h4>Jeremy Roelfs</h4>
+            <hr/>
+            <nav class="row">
+                <ul class="text-center">
+                  <li><a href="mailTo:jeremyroelfs@icloud.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a href="http://github.com/jeremyroelfs"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/The_J_Roel"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></i></a></li>
+                <div class="text-center social"><a href="https://www.linkedin.com/in/jeremyroelfs"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></i></a></div>
+                  
+                </ul>
+            </nav>
+            <a href="/license"><span class="copyright">&copy;2016 jeremyroelfs.com</span></a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h4>Categories</h4>
+            <hr/>
+            
+                <a href="/category/portfolio/">
+                    <h5 class="title-list-item">Portfolio</h5>
+                </a>
+            
+                <a href="/category/blog/">
+                    <h5 class="title-list-item">Blog</h5>
+                </a>
+            
+                <a href="/category/websites/">
+                    <h5 class="title-list-item">Websites</h5>
+                </a>
+            
+        </div>
+    </div>
+</footer>
+
+  </body>
+
+</html>
