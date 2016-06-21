@@ -3,7 +3,7 @@ layout: post
 title:  "New Force Energy"
 date:   2016-02-01 12:04:53 -0700
 permalink: /new-force-energy/
-categories: portfolio
+categories: websites
 image:	new-force-energy.png
 description: This sales site showcases the rigs of New Force Energy. The rigs are high tech and the most environmentally friendly drilling rigs available in the world. That's saying a lot. Besides the well head itself. They leave no footprint.
 ---

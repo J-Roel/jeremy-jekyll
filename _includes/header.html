@@ -7,8 +7,13 @@
       <nav>
         <ul class="text-center">
             <li><a href="/#about">About</a></li>
+
             {% for category in site.categories %}
+              {% if category[0] == "websites"  %}
+
+              {% else if %}
                 <li><a href="/category/{{ category[0] }}/">{{ category[0] | capitalize }}</a></li>
+              {% endif %}
             {% endfor %}
             <!-- <li class="hire"><a href="/#hire">Hire</a></li> -->
         </ul>

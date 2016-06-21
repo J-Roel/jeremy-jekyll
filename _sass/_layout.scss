@@ -60,28 +60,16 @@ img {
 ===================================*/
 
 
-h1 {
-    font-family: $primaryFont;
-   /* position: absolute;
-    width: 90%;
-    top: 50%;
-    left: 50%;
-    color: #000;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); */ 
-}
+h1 { font-family: $primaryFont; }
 h2{ font-size: 2em; font-family: $primaryFont; }
 h3{
-        font-size: 2em; 
-        font-family: $secondaryFont;
+        font-size: 200%; 
+        font-family: $primaryFont;
         line-height: 70px; 
         color: #F3F3F3; 
 }
 
-h4{ font-family: $primaryFont; font-size: 1.4em; color: #F3F3F3; padding: 1%; }
+h4{ font-family: $primaryFont; font-size: 1.4em; color: #2F3441; padding: 1%; }
 p{ font-size: 1em; font-family: $secondaryFont; padding: 1%; }
 a{ font-size: 1em; font-family: $secondaryFont; color: #000; transition: 0.2s; }
 a:hover { text-decoration: none; color: #6A6B6D; }
@@ -95,36 +83,9 @@ li { font-size: 1.2em; }
     font-size: 140%;
     font-family: $copyrightFont;
 }
-.text-inset {
-    color: rgba(0,0,0,0.9);
-    text-shadow: 1px 1px 2px rgba(155,155,155,0.1);
-}
-.text-inset-lite{
-    background-color: #F3F3F3;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-
-}
-.hero-shadow{
-    font-size: 550%;
-    font-family: $westernFont;
-    /*text-shadow: 0 -3px 0 #333,
-    0 6px 8px rgba(0,0,0,.4),
-    0 9px 10px rgba(0,0,0,.15),
-    0 30px 10px rgba(0,0,0,.18),
-    0 15px 10px rgba(0,0,0,.21);*/
-    color: rgba(0,0,0,0.7);
-    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
-}
-.hero-inset{
+.hero-font{
+    font-family: $extraFont;
     font-size: 450%;
-    font-family: $westernFont;
-   /* color: rgba(0,0,0,0.9);
-    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
-    -webkit-transition: translateY(rotate 5deg);*/
 }
 
 
@@ -140,17 +101,6 @@ li { font-size: 1.2em; }
         -ms-transform: translate(-50%, -40%);
         -o-transform: translate(-50%, -40%);
         transform: translate(-50%, -40%);  
-}
-.hero-style{
-    font-family: $primaryFont;
-    font-size: 400%;
-     color: rgba(0,0,0,0.9);
-    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
-    /*text-shadow: 0 -3px 0 #333,
-    0 6px 8px rgba(0,0,0,.4),
-    0 9px 10px rgba(0,0,0,.15),
-    0 30px 10px rgba(0,0,0,.18),
-    0 15px 10px rgba(0,0,0,.21);*/
 }
 /*=================================
     III.    HEADER CLASSES
@@ -217,30 +167,14 @@ nav ul li a{
     background: rgba(47,52,65,0.5);
     overflow:hidden;
     img {
-        /*position: absolute;
-        max-width: 20%;
-        top: 10%;
-        left: 10%;*/
         width: 55%;
     }
-   /* img:empty{
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }*/
     p{
         color: #2F3441;
     }
 }
 #hero-page{ 
     height: 350px;
-    h1{
-        font-size: 200%;
-    }
     time{
         padding: 0 2% 0 2%;
     }
@@ -253,27 +187,19 @@ nav ul li a{
     }
 }
 
-#about{
-    padding:4% 0 4% 0;
-    quote{
-        font-family: $extraFont;
-        font-size: 3rem;
 
-    }
-    p{
-        padding: 4%;
-        font-size: 1.2em;
-        line-height: 1.5em;
-    }
-}
-#contact{
-    padding: 5%;
-    background:transparent;
-    .social {
-        display: inline-block;
-        margin: 2%;
+
+
+
+.social {
+    display: inline-block;
+    margin: 2%;
+    
+    i{
+        color: #F3F3F3;    
     }
 }
+
 .artwork{
     background-color: #fff;
     box-shadow: 1px 1px 7px rgba(0,0,0,0.4);
@@ -287,16 +213,19 @@ nav ul li a{
     V. FULLSCREEN TEMPLATES
 ===================================*/
 #category{
+    background: #F3F3F3;
     ul{
         margin: 4%;
     }
 }
 
-/* This will be a big one*/
+/* This is setup for use in the tutorials for
+clean fonts, sections, and ul li that is setup different */
 #post-content {
     h4{
         width: 100%;
         background: #2F3441;
+        color: #F3F3F3;
     }
     strong{ 
         font-weight: bold;
@@ -416,8 +345,6 @@ nav ul li a{
         height: 200px;
     }
 }
-
-
 /*for the for loop for the Title only*/
 .title-list-item{ /*used in footer.html*/
     padding: 1%;
@@ -473,8 +400,9 @@ footer{
 /*=================================
     SPECIAL CLASSES
 ===================================*/
+/*For the clickable element that displays
+the popup-menu (_includes/popup-menu.html)*/
 #popmenu{ /* Logo */
-    
     width: 100%;
     padding: 20px 0 0 20px;
     cursor: pointer;
@@ -485,61 +413,20 @@ footer{
     opacity: 0;
 }
 
-
+/* for bouncing arrow on landing page */
 #scrollJumper{
     color: #F3F3F3;
     text-shadow: 1px 1px 7px rgba(255,255,255,0.2);
     -webkit-animation: bounce 2s infinite ease-in-out;
 }
-
 @-webkit-keyframes bounce {
     0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
     40%  { -webkit-transform: translateY(-20px); }
     80% { -webkit-transform: translateY(-10px); }
 }
 
-#block-chart{
-    .t{
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        height: 100px;
-        margin: 4px;
-        background: rgb(0,255,0);
-        box-shadow: 2px 2px 7px rgba(0,0,0,0.4);
-    }
-    .count{
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        height: 100px;
-        background: rgb(120,120,140);
-        box-shadow: 1px 1px 7px rgba(0,0,0,0.4);
-    }
-    p{
-            font-size: 14px;
-            font-family: $secondaryFont;
-            font-weight: bolder;
-            position: absolute;
-            width: 90%;
-            top: 50%;
-            left: 50%;
-            color: #000;
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-}
-#timeline{
-    background: #fff;
-}
 
-
-
-/* Parallax.js */
+/* CSS for the Parallax.js plugin (/assets/js/parallax.js) */
 .parallax-window{
     margin:0;
     padding:0;

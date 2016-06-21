@@ -106,32 +106,22 @@ img {
     II. TYPOGRAPHY CLASSES
 ===================================*/
 h1 {
-  font-family: "Prompt", sans-serif;
-  /* position: absolute;
-   width: 90%;
-   top: 50%;
-   left: 50%;
-   color: #000;
-   -webkit-transform: translate(-50%, -50%);
-   -moz-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   -o-transform: translate(-50%, -50%);
-   transform: translate(-50%, -50%); */ }
+  font-family: "Prompt", sans-serif; }
 
 h2 {
   font-size: 2em;
   font-family: "Prompt", sans-serif; }
 
 h3 {
-  font-size: 2em;
-  font-family: "Titillium Web", sans-serif;
+  font-size: 200%;
+  font-family: "Prompt", sans-serif;
   line-height: 70px;
   color: #F3F3F3; }
 
 h4 {
   font-family: "Prompt", sans-serif;
   font-size: 1.4em;
-  color: #F3F3F3;
+  color: #2F3441;
   padding: 1%; }
 
 p {
@@ -165,35 +155,9 @@ li {
   font-size: 140%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
-.text-inset {
-  color: rgba(0, 0, 0, 0.9);
-  text-shadow: 1px 1px 2px rgba(155, 155, 155, 0.1); }
-
-.text-inset-lite {
-  background-color: #F3F3F3;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px; }
-
-.hero-shadow {
-  font-size: 550%;
-  font-family: "Rye", cursive;
-  /*text-shadow: 0 -3px 0 #333,
-  0 6px 8px rgba(0,0,0,.4),
-  0 9px 10px rgba(0,0,0,.15),
-  0 30px 10px rgba(0,0,0,.18),
-  0 15px 10px rgba(0,0,0,.21);*/
-  color: rgba(0, 0, 0, 0.7);
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); }
-
-.hero-inset {
-  font-size: 450%;
-  font-family: "Rye", cursive;
-  /* color: rgba(0,0,0,0.9);
-   text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
-   -webkit-transition: translateY(rotate 5deg);*/ }
+.hero-font {
+  font-family: "Mr Dafoe", cursive;
+  font-size: 450%; }
 
 .hero-position {
   /* used on landing page only */
@@ -208,17 +172,6 @@ li {
   -ms-transform: translate(-50%, -40%);
   -o-transform: translate(-50%, -40%);
   transform: translate(-50%, -40%); }
-
-.hero-style {
-  font-family: "Prompt", sans-serif;
-  font-size: 400%;
-  color: rgba(0, 0, 0, 0.9);
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
-  /*text-shadow: 0 -3px 0 #333,
-  0 6px 8px rgba(0,0,0,.4),
-  0 9px 10px rgba(0,0,0,.15),
-  0 30px 10px rgba(0,0,0,.18),
-  0 15px 10px rgba(0,0,0,.21);*/ }
 
 /*=================================
     III.    HEADER CLASSES
@@ -268,29 +221,14 @@ nav ul li a {
   padding: 0;
   margin: 0;
   background: rgba(47, 52, 65, 0.5);
-  overflow: hidden;
-  /* img:empty{
-       top: 50%;
-       left: 50%;
-       -webkit-transform: translate(-50%, -50%);
-       -moz-transform: translate(-50%, -50%);
-       -ms-transform: translate(-50%, -50%);
-       -o-transform: translate(-50%, -50%);
-       transform: translate(-50%, -50%);
-   }*/ }
+  overflow: hidden; }
   #hero img, #hero-page img {
-    /*position: absolute;
-    max-width: 20%;
-    top: 10%;
-    left: 10%;*/
     width: 55%; }
   #hero p, #hero-page p {
     color: #2F3441; }
 
 #hero-page {
   height: 350px; }
-  #hero-page h1 {
-    font-size: 200%; }
   #hero-page time {
     padding: 0 2% 0 2%; }
   #hero-page .author {
@@ -299,22 +237,11 @@ nav ul li a {
     height: 200px;
     width: 300px; }
 
-#about {
-  padding: 4% 0 4% 0; }
-  #about quote {
-    font-family: "Mr Dafoe", cursive;
-    font-size: 3rem; }
-  #about p {
-    padding: 4%;
-    font-size: 1.2em;
-    line-height: 1.5em; }
-
-#contact {
-  padding: 5%;
-  background: transparent; }
-  #contact .social {
-    display: inline-block;
-    margin: 2%; }
+.social {
+  display: inline-block;
+  margin: 2%; }
+  .social i {
+    color: #F3F3F3; }
 
 .artwork {
   background-color: #fff;
@@ -325,13 +252,17 @@ nav ul li a {
 /*=================================
     V. FULLSCREEN TEMPLATES
 ===================================*/
-#category ul {
-  margin: 4%; }
+#category {
+  background: #F3F3F3; }
+  #category ul {
+    margin: 4%; }
 
-/* This will be a big one*/
+/* This is setup for use in the tutorials for
+clean fonts, sections, and ul li that is setup different */
 #post-content h4 {
   width: 100%;
-  background: #2F3441; }
+  background: #2F3441;
+  color: #F3F3F3; }
 #post-content strong {
   font-weight: bold;
   text-shadow: 0.5px 0.5px 0px #000; }
@@ -462,6 +393,8 @@ footer {
 /*=================================
     SPECIAL CLASSES
 ===================================*/
+/*For the clickable element that displays
+the popup-menu (_includes/popup-menu.html)*/
 #popmenu {
   /* Logo */
   width: 100%;
@@ -472,6 +405,7 @@ footer {
 .fadeIn {
   opacity: 0; }
 
+/* for bouncing arrow on landing page */
 #scrollJumper {
   color: #F3F3F3;
   text-shadow: 1px 1px 7px rgba(255, 255, 255, 0.2);
@@ -484,41 +418,7 @@ footer {
     -webkit-transform: translateY(-20px); }
   80% {
     -webkit-transform: translateY(-10px); } }
-#block-chart .t {
-  display: inline-block;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  margin: 4px;
-  background: lime;
-  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4); }
-#block-chart .count {
-  display: inline-block;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  background: #78788c;
-  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4); }
-#block-chart p {
-  font-size: 14px;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: bolder;
-  position: absolute;
-  width: 90%;
-  top: 50%;
-  left: 50%;
-  color: #000;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-#timeline {
-  background: #fff; }
-
-/* Parallax.js */
+/* CSS for the Parallax.js plugin (/assets/js/parallax.js) */
 .parallax-window {
   margin: 0;
   padding: 0;

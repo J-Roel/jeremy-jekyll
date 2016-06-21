@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Artwork Examples"
+title:  "Artwork"
 date:   2010-10-01 12:04:53 -0700
-permalink: /posh-brewing/
+permalink: /art-work/
 categories: portfolio
 image:	halloween-flyer.jpg
 description: Examples of artwork I've done over the years.
