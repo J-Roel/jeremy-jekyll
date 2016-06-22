@@ -159,15 +159,15 @@ li {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .hero-font {
-  font-family: "Mr Dafoe", cursive;
-  font-size: 450%; }
+  font-family: "Prompt", sans-serif;
+  font-size: 350%; }
 
 .hero-position {
   /* used on landing page only */
   /* Postion */
   position: absolute;
   width: 70%;
-  top: 40%;
+  top: 45%;
   left: 50%;
   color: #F3F3F3;
   -webkit-transform: translate(-50%, -40%);
@@ -175,6 +175,9 @@ li {
   -ms-transform: translate(-50%, -40%);
   -o-transform: translate(-50%, -40%);
   transform: translate(-50%, -40%); }
+  .hero-position .hero-img {
+    width: 65px !important;
+    height: 16px !important; }
 
 /*=================================
     III.    HEADER CLASSES
@@ -240,10 +243,10 @@ nav ul li a {
     height: 200px;
     width: 300px; }
 
-#about {
+#new-info {
   background: transparent; }
-  #about img {
-    width: 200px !important; }
+  #new-info img {
+    width: 200px; }
 
 .social {
   display: inline-block;

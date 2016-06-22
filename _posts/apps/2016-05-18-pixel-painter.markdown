@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "OMDb API with AJAX"
+title:  "Pixel Painter"
 date:   2016-06-15 12:04:53 -0700
 author: John Doe
-permalink: /omdb-api-with-ajax/
+permalink: /pixel-painter/
 categories: apps
 image:
 description: Paint pixels, add shadows and colors to come up with some 8-bit awesomeness!

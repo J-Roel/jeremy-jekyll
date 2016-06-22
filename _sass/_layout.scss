@@ -86,8 +86,8 @@ li { font-size: 1.2em; }
     font-family: $copyrightFont;
 }
 .hero-font{
-    font-family: $extraFont;
-    font-size: 450%;
+    font-family: $primaryFont;
+    font-size: 350%;
 }
 
 
@@ -95,7 +95,7 @@ li { font-size: 1.2em; }
     /* Postion */
     position: absolute;
         width: 70%;
-        top: 40%;
+        top: 45%;
         left: 50%;
         color: #F3F3F3;
         -webkit-transform: translate(-50%, -40%);
@@ -103,7 +103,12 @@ li { font-size: 1.2em; }
         -ms-transform: translate(-50%, -40%);
         -o-transform: translate(-50%, -40%);
         transform: translate(-50%, -40%);  
+        .hero-img{
+            width: 65px !important;
+            height: 16px !important;
+        }        
 }
+
 /*=================================
     III.    HEADER CLASSES
 ===================================*/
@@ -189,10 +194,10 @@ nav ul li a{
     }
 }
 
-#about{
+#new-info{
     background: transparent;
     img{
-        width: 200px !important;
+        width: 200px;
     }
 }
 
