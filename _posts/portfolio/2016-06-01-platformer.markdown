@@ -15,6 +15,9 @@ tags: [game, games, gimp, imp, video]
 		<h4>Platformer</h4>
 		<hr/>
 		<p>I've always wanted to make a RPG hack n' slash side scroller. I was fascinated with them growing up. So here is the start of my (who knows how many attempts). </p>
+
+		<img src="/assets/images/platformer-cave.png">
+
 		<p>(more comming soon)</p>
 	</div>
 </div>
