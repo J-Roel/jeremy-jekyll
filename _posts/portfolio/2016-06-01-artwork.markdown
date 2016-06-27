@@ -22,7 +22,7 @@ description: Examples of artwork I've done over the years.
 				<img class="center-block" src="/assets/images/halloween-flyer.jpg"/>
 				<p>Halloween flyer I made for our golf course where I bartended at night. How many scary faces do you see?</p>
 			</div>
-			<img class="center-block" src="/assets/images/indian-motorcycles.png"/>
+			<img class="center-block" src="/assets/images/indian-motorcycle.png"/>
 				<p>Some demo artwork I did for a motorcycle museum</p>
 		</div>
 

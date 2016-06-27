@@ -82,8 +82,9 @@ li { font-size: 1.2em; }
     border-radius: 5%;
 }
 .copyright {
-    font-size: 140%;
+    font-size: 100%;
     font-family: $copyrightFont;
+    text-align: center;
 }
 .hero-font{
     font-family: $primaryFont;
