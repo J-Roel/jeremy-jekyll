@@ -1,15 +1,18 @@
 'use strict';
 /*
 	effects.js
-
 	Contains the functionality for the scrolling fixed menu
 	and the popup menu toggle
-
 */
 $(document).ready(function(){
 
 
-	/* Menu Pop up Toggle */	
+	/* 
+  * Menu Pop up Toggle 
+  * @param = object/element with id popmenu
+  * @return = n/a
+  * Toggle 
+  */	
 	$('#popmenu').click( function(){
 		$('#popup-menu').toggle('hide');
 	});

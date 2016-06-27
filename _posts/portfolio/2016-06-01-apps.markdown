@@ -3,7 +3,7 @@ layout: post
 title:  "Gimp Imp"
 date:   2007-04-15 12:04:53 -0700
 permalink: /gimp-imp/
-categories: portfolio
+categories: apps
 image:	gimp-imp.png
 description: A 2D game with parallax scrolling and beautiful graphics. It is a floppy bird clone that is way more fun to play than the original.
 tags: [game, games, gimp, imp, video]
