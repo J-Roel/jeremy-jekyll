@@ -5,27 +5,104 @@ date:   2010-10-01 12:04:53 -0700
 permalink: /art-work/
 categories: portfolio
 image:	halloween-flyer.jpg
-description: Examples of artwork I've done over the years.
+description: Examples of artwork and 3D renderings I've done over the years.
 ---
 
 <div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-9 col-md-offset-1 col-lg-9 col-lg-offset-1">
 		<hr/>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+		<p><strong>I really enjoy working in 3D, but changing over to web development and solidating my programming skills has really opened doors to learning new 2D art and mastering tools like after effects, spriter and many other frameworks. It so great having the ability to program cutting edge technologies, and then create the graphic designs and content for my projects.</strong></p>
+		<hr/>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 			<div class="artwork">
 				<img class="center-block" src="/assets/images/posh-brewing-labels.jpg"/>
 				<p>In 2015, my friend finally brewed a beer he felt was worth marketing. I had the pleasure of helping brew, drink and make the label.</p>
 			</div>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/rig-concept-art-one.bmp"/>
+				<p>Advance Drilling Technologies, LLC. 3D Rig demonstration.</p>
+			</div>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/rig-conept-art-two.jpg"/>
+				<p>Advance Drilling Technologies, LLC. 3D Rig demonstration.</p>
+			</div>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/pre-rig-proving-art-one.png"/>
+				<p>Concept 3D rendering to land a demonstration project for an entire 3D operational drilling rig.</p>
+			</div>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/pre-rig-proving-art-two.jpg"/>
+				<p>Another concept 3D rendering to land that demonstration. Pumping unit is fully animated with counter weights and all.</p>
+			</div>
+
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/witch-woods.jpg"/>
+				<p>Proud of this picture. 2004, it was my first indie game. A top-down magic shooting game called "Witch's Woods" in Torque Game Engine. It had thick, lush vegatation, all my own characters and magic spells, and ran at 65fps.</p>
+			</div>
 			<div class="artwork">
 				<img class="center-block" src="/assets/images/halloween-flyer.jpg"/>
 				<p>Halloween flyer I made for our golf course where I bartended at night. How many scary faces do you see?</p>
 			</div>
-			<img class="center-block" src="/assets/images/indian-motorcycle.png"/>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/indian-motorcycle.png"/>
 				<p>Some demo artwork I did for a motorcycle museum</p>
+			</div>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/seven-realms-one.jpg"/>
+				<p>My Zelda/Fable wanna-be game. I have a lot of fun making it.</p>
+			</div>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/seven-realms-two.jpg"/>
+				<p>More screen shots from seven realms</p>
+			</div>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/cave-concept-art.jpg"/>
+				<p>Seven Realms - mossy cave screen shot.</p>
+			</div>
 		</div>
-
-			
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/enchantment-concept-art-one.jpg"/>
+				<p>Enchantment Concept Art</p>
+			</div>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/enchantment-concept-art.png"/>
+				<p>Enchantment Concept Art</p>
+			</div>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/maxs-adventure.jpg"/>
+				<p>Max's Adventure - 8bit awesomeness</p>
+			</div>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/platformer-cave.png"/>
+				<p>Phaser.js, Tiled and Spriter</p>
+			</div>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/side-scroller-concept-art.png"/>
+				<p>Changing it up. A 3D side scroller in Unity I got to make some of the art assets for.</p>
+			</div>
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/magi-warrior-concept-art-one.png"/>
+				<p>This little game was inspired by an email from a tutorial I did on GarageGames.com. The person asked me how to build a 3D/2D side scroller. And of course... I've ALWAYS wanted to build a beautiful 3D Side Scroller. Trine stole my idea, lol.</p>
+			</div>
+			<div class="artwork">
+				<p>I also have many character creations, and character animations. But much of that work was done as a contractor. So can't show them off incase they get stolen.</p>
+			</div>
+		</div>
 	</div>
 </div>
+
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-9 col-md-offset-1 col-lg-9 col-lg-offset-1">
+		<hr/>
+
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="artwork">
+				<iframe class="center-block" width="620" height="515" src="https://www.youtube.com/embed/oR_e-Kfu5Ys" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+		

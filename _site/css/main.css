@@ -256,6 +256,7 @@ nav ul li a {
     color: #F3F3F3; }
 
 .artwork {
+  margin: 3% 0 3% 0;
   background-color: #fff;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4); }
   .artwork p {
