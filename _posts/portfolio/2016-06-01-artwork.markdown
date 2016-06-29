@@ -84,7 +84,7 @@ description: Examples of artwork and 3D renderings I've done over the years.
 				<p>Changing it up. A 3D side scroller in Unity I got to make some of the art assets for.</p>
 			</div>
 			<div class="artwork">
-				<img class="center-block" src="/assets/images/magi-warrior-concept-art-one.png"/>
+				<img class="center-block" src="/assets/images/magi-warrior-concept-art-one.jpg"/>
 				<p>This little game was inspired by an email from a tutorial I did on GarageGames.com. The person asked me how to build a 3D/2D side scroller. And of course... I've ALWAYS wanted to build a beautiful 3D Side Scroller. Trine stole my idea, lol.</p>
 			</div>
 			<div class="artwork">
