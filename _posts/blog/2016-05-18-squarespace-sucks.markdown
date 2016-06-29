@@ -16,7 +16,17 @@ description: What is all the Squarespace positive hype about? It's 25 premade we
 			<hr/>
 			<p>Google Squarespace reviews, then Google some YouTube videos.</p>
 			<p>And what do you hear? <strong>"It's beautiful, it's wonderful, it's amazing"... it's crap.</strong></p>
+			<p><strong>Why you ask? Here is a growing list:</strong></p>
 			<hr/>
+			<ul>
+				<li>Controlled to the will of the templates</li>
+				<li>Doesn't always update your page when you save.</li>
+				<li>Cannot write your own css. You have to override the templates CSS to get personal touches added to the template, which could break the template and it's responsiveness.</li>
+				<li>Can only edit the text on the "banner" image with Bedford, Anya, Bryant and Hayden templates.</li>
+				<li>You have to sign up for a commerace package before you can even try the commerace templates.</li>
+				<li>When you do change templates, none of your custom css is tansfered</li>
+
+			</ul>
 			
 
 			<p>For my full-stack capstone project I made something similar to this. It was a drag and drop interface to prototyping websites. I was basic, but could almost do more than Squarespace. And I don't have the money. Squarespace is sponsering superbowl ads? Maybe they should spend some more money on their service.</p>
