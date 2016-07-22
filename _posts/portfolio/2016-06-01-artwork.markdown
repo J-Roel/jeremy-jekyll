@@ -4,7 +4,7 @@ title:  "Artwork"
 date:   2010-10-01 12:04:53 -0700
 permalink: /art-work/
 categories: portfolio
-image:	halloween-flyer.jpg
+image:	cafe-shadow.png
 description: Examples of artwork and 3D renderings I've done over the years.
 ---
 
@@ -14,6 +14,10 @@ description: Examples of artwork and 3D renderings I've done over the years.
 		<p><strong>I really enjoy working in 3D, but changing over to web development and solidating my programming skills has really opened doors to learning new 2D art and mastering tools like after effects, spriter and many other frameworks. It so great having the ability to program cutting edge technologies, and then create the graphic designs and content for my projects.</strong></p>
 		<hr/>
 		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+			<div class="artwork">
+				<img class="center-block" src="/assets/images/cafe-shadow.png"/>
+				<p></p>
+			</div>
 			<div class="artwork">
 				<img class="center-block" src="/assets/images/posh-brewing-labels.jpg"/>
 				<p>In 2015, my friend finally brewed a beer he felt was worth marketing. I had the pleasure of helping brew, drink and make the label.</p>
